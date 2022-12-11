@@ -4,6 +4,14 @@
  */
 package UserInterface.AdministrativeRole;
 
+import Business.Employee.Employee;
+import Business.Organization.Organization;
+import Business.Organization.OrganizationDirectory;
+import java.awt.CardLayout;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author JANU
@@ -13,8 +21,17 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
     /**
      * Creates new form ManageEmployeeJPanel
      */
-    public ManageEmployeeJPanel() {
+    
+    private JPanel userProcessContainer;
+    private OrganizationDirectory organizationDirectory;
+    
+    public ManageEmployeeJPanel(JPanel userProcessContainer, OrganizationDirectory organizationDirectory) {
         initComponents();
+        this.userProcessContainer=userProcessContainer;
+        this.organizationDirectory=organizationDirectory;
+        
+        populateOrganizationComboBox();
+        populateOrganizationEmpComboBox();
     }
 
     /**
@@ -202,7 +219,36 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
             populateTable(organization);
         }
     }//GEN-LAST:event_organizationJComboBoxActionPerformed
+    
+   private void populateTable(Organization organization) {
+      
+        DefaultTableModel model = (DefaultTableModel) organizationJTable.getModel();
+        model.setRowCount(0);
+        
+        for (Employee employee : organization.getEmployeeDirectory().getEmployeeList()){
+            Object[] row = new Object[2];
+            row[0] = employee.getId();
+            row[1] = employee.getName();
+            model.addRow(row);
+        }  
+    }
+   
+     private void populateOrganizationComboBox() {
+        organizationJComboBox.removeAllItems();
+        
+        for (Organization organization : organizationDirectory.getOrganizationList()){
+            organizationJComboBox.addItem(organization);
+        }
+    }
 
+    private void populateOrganizationEmpComboBox() {
+    
+         organizationEmpJComboBox.removeAllItems();
+        
+        for (Organization organization : organizationDirectory.getOrganizationList()){
+            organizationEmpJComboBox.addItem(organization);
+        }
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addJButton;

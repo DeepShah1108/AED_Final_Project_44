@@ -4,6 +4,23 @@
  */
 package UserInterface.NGORole;
 
+import Business.EcoSystem;
+import Business.Enterprise.DistributorEnterprise;
+import Business.Enterprise.Enterprise;
+import Business.Network.Network;
+import Business.Organization.DistributorOrganization;
+import Business.Organization.NGOAdminOrganization;
+import Business.Organization.Organization;
+import Business.UserAccount.UserAccount;
+import Business.WorkQueue.FoodRequirementRequest;
+import Business.WorkQueue.Products;
+import Business.WorkQueue.WorkRequest;
+import java.awt.CardLayout;
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author JANU
@@ -13,8 +30,21 @@ public class NGOWorkAreaJPanel extends javax.swing.JPanel {
     /**
      * Creates new form NGOWorkAreaJPanel
      */
-    public NGOWorkAreaJPanel() {
+    
+    private JPanel userProcessContainer;
+    private EcoSystem business;
+    private UserAccount userAccount;
+    private Enterprise enterprise;
+    private NGOAdminOrganization ngoOrganization;
+    
+    public NGOWorkAreaJPanel(JPanel userProcessContainer, UserAccount userAccount, Organization organization, Enterprise enterprise, EcoSystem business){
         initComponents();
+        
+        this.userProcessContainer = userProcessContainer;
+        this.userAccount = userAccount;
+        this.business = business;
+        this.enterprise = enterprise;
+        this.ngoOrganization = (NGOAdminOrganization) organization;
     }
 
     /**
@@ -334,7 +364,23 @@ public class NGOWorkAreaJPanel extends javax.swing.JPanel {
             }
         }
     }//GEN-LAST:event_showProductBtnActionPerformed
+    
+    public void populateTable() {
 
+        DefaultTableModel model = (DefaultTableModel) workRequestJTable.getModel();
+
+        model.setRowCount(0);
+
+        for (WorkRequest request : ngoOrganization.getWorkQueue().getWorkRequestList()) {
+            Object[] row = new Object[4];
+            row[0] = request;
+            row[1] = request.getSender().getEmployee().getName();
+            row[2] = request.getReceiver() == null ? null : request.getReceiver().getEmployee().getName();
+            row[3] = request.getStatus();
+
+            model.addRow(row);
+        }
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton assignJButton;
@@ -349,3 +395,6 @@ public class NGOWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JTable workRequestJTable;
     // End of variables declaration//GEN-END:variables
 }
+
+
+

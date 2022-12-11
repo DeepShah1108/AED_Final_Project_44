@@ -4,6 +4,10 @@
  */
 package UserInterface.AdministrativeRole;
 
+import Business.Enterprise.Enterprise;
+import java.awt.CardLayout;
+import javax.swing.JPanel;
+
 /**
  *
  * @author JANU
@@ -13,8 +17,14 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
     /**
      * Creates new form AdminWorkAreaJPanel
      */
-    public AdminWorkAreaJPanel() {
+    private  JPanel userProcessContainer;
+    private Enterprise enterprise;
+    
+    public AdminWorkAreaJPanel(JPanel userProcessContainer, Enterprise enterprise) {
         initComponents();
+        this.userProcessContainer=userProcessContainer;
+        this.enterprise=enterprise;
+        lblEnterpriseName.setText(enterprise.getName());
     }
 
     /**
