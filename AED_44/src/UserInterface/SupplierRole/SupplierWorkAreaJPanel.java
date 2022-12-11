@@ -89,7 +89,9 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(153, 255, 255));
 
-        btnProductsList.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
+        btnProductsList.setBackground(new java.awt.Color(0, 0, 102));
+        btnProductsList.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        btnProductsList.setForeground(new java.awt.Color(255, 255, 255));
         btnProductsList.setText("View Drug Request");
         btnProductsList.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,7 +99,9 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        workRequestJTable.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
+        workRequestJTable.setBackground(new java.awt.Color(204, 255, 255));
+        workRequestJTable.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        workRequestJTable.setForeground(new java.awt.Color(255, 255, 255));
         workRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -123,7 +127,9 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(workRequestJTable);
 
-        assignJButton.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
+        assignJButton.setBackground(new java.awt.Color(0, 0, 102));
+        assignJButton.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        assignJButton.setForeground(new java.awt.Color(255, 255, 255));
         assignJButton.setText("Assign to me");
         assignJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -131,7 +137,9 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnApprove.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
+        btnApprove.setBackground(new java.awt.Color(0, 0, 102));
+        btnApprove.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        btnApprove.setForeground(new java.awt.Color(255, 255, 255));
         btnApprove.setText("Approve");
         btnApprove.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -139,11 +147,14 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        enterpriseLabel1.setFont(new java.awt.Font("Bodoni MT", 1, 24)); // NOI18N
+        enterpriseLabel1.setBackground(new java.awt.Color(0, 0, 102));
+        enterpriseLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         enterpriseLabel1.setForeground(new java.awt.Color(255, 255, 255));
         enterpriseLabel1.setText("Supplier Dashboard");
 
-        refreshJButton.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
+        refreshJButton.setBackground(new java.awt.Color(0, 0, 102));
+        refreshJButton.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        refreshJButton.setForeground(new java.awt.Color(255, 255, 255));
         refreshJButton.setText("Refresh");
         refreshJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -164,11 +175,12 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnApprove, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(btnProductsList, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 372, Short.MAX_VALUE))
+                        .addComponent(btnProductsList)
+                        .addGap(0, 1023, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(enterpriseLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(150, 150, 150)
                         .addComponent(refreshJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
@@ -176,9 +188,9 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(28, 28, 28)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(enterpriseLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(refreshJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(refreshJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(enterpriseLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27)
@@ -186,7 +198,7 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
                     .addComponent(btnProductsList, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(assignJButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnApprove, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(559, Short.MAX_VALUE))
+                .addContainerGap(733, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
