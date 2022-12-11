@@ -87,9 +87,8 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
         enterpriseLabel1 = new javax.swing.JLabel();
         refreshJButton = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(0, 51, 51));
+        setBackground(new java.awt.Color(153, 255, 255));
 
-        btnProductsList.setBackground(new java.awt.Color(255, 255, 255));
         btnProductsList.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
         btnProductsList.setText("View Product Request");
         btnProductsList.addActionListener(new java.awt.event.ActionListener() {
@@ -124,7 +123,6 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(workRequestJTable);
 
-        assignJButton.setBackground(new java.awt.Color(255, 255, 255));
         assignJButton.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
         assignJButton.setText("Assign to me");
         assignJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -133,7 +131,6 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnApprove.setBackground(new java.awt.Color(255, 255, 255));
         btnApprove.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
         btnApprove.setText("Approve");
         btnApprove.addActionListener(new java.awt.event.ActionListener() {
@@ -146,7 +143,6 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
         enterpriseLabel1.setForeground(new java.awt.Color(255, 255, 255));
         enterpriseLabel1.setText("Supplier Dashboard");
 
-        refreshJButton.setBackground(new java.awt.Color(255, 255, 255));
         refreshJButton.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
         refreshJButton.setText("Refresh");
         refreshJButton.addActionListener(new java.awt.event.ActionListener() {

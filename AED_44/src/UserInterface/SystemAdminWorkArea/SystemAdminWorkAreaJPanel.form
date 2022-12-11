@@ -99,8 +99,8 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="321" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="btnManageEnterprise" min="-2" pref="191" max="-2" attributes="0"/>
-                                  <Component id="btnManageNetwork" min="-2" pref="191" max="-2" attributes="0"/>
+                                  <Component id="btnManageNetwork" alignment="1" min="-2" pref="191" max="-2" attributes="0"/>
+                                  <Component id="btnManageEnterprise" alignment="1" min="-2" pref="191" max="-2" attributes="0"/>
                                   <Component id="btnManageAdmin" alignment="1" min="-2" pref="191" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -120,12 +120,12 @@
                           <Component id="lblSelectedNode" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
-                      <Component id="btnManageNetwork" min="-2" pref="36" max="-2" attributes="0"/>
+                      <Component id="btnManageNetwork" min="-2" pref="53" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
+                      <Component id="btnManageEnterprise" min="-2" pref="48" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
-                      <Component id="btnManageEnterprise" min="-2" pref="38" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
-                      <Component id="btnManageAdmin" min="-2" pref="40" max="-2" attributes="0"/>
-                      <EmptySpace pref="403" max="32767" attributes="0"/>
+                      <Component id="btnManageAdmin" min="-2" pref="48" max="-2" attributes="0"/>
+                      <EmptySpace pref="389" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
