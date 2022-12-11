@@ -21,15 +21,15 @@ public class InventoryDirectory {
      
     private InventoryDirectory() {
         
-     	Inventory inv1  = new Inventory("101", "Acetaminophen","Dayquil","Available",100);
-        Inventory inv2  = new Inventory("102", "Dextromethorphan","Dayquil","Available",100);
-        Inventory inv3  = new Inventory("103", "Phenylephrine","Dayquil","Available",100);
-        Inventory inv4  = new Inventory("104", "Neomycin","NeoSporin","Available",100);
-        Inventory inv5  = new Inventory("105", "Bacitracin","NeoSporin","Available",100);
-        Inventory inv6  = new Inventory("106", "Polymyxin","NeoSporin","Available",100);
-        Inventory inv7  = new Inventory("107", "DiphenylMethoxy","Benadryl","Available",100);
-        Inventory inv8  = new Inventory("108", "Loratadine","Benadryl","Available",100);
-        Inventory inv9  = new Inventory("109", "FabiFlu","Benadryl","Available",100);
+     	Inventory inv1  = new Inventory("101", "Acetaminophen","Dayquil Products","Available",100);
+        Inventory inv2  = new Inventory("102", "Dextromethorphan","Dayquil Products","Available",100);
+        Inventory inv3  = new Inventory("103", "Phenylephrine","Dayquil Products","Available",100);
+        Inventory inv4  = new Inventory("104", "Neomycin","NeoSporin Products","Available",100);
+        Inventory inv5  = new Inventory("105", "Bacitracin","NeoSporin Products","Available",100);
+        Inventory inv6  = new Inventory("106", "Polymyxin","NeoSporin Products","Available",100);
+        Inventory inv7  = new Inventory("107", "DiphenylMethoxy","Benadryl Products","Available",100);
+        Inventory inv8  = new Inventory("108", "Loratadine","Benadryl Products","Available",100);
+        Inventory inv9  = new Inventory("109", "Ham","Meat Products","Available",100);
         Inventory inv10 = new Inventory("110", "Acetominophen","Tylenol","Available",100);
         Inventory inv11 = new Inventory("111", "Lyrica","Tylenol","Available",100);
         Inventory inv12 = new Inventory("112", "Dolo","Tylenol","Available",100);

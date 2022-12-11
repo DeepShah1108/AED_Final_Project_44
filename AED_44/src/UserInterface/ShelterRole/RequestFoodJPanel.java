@@ -212,7 +212,7 @@ public class RequestFoodJPanel extends javax.swing.JPanel {
         });
         add(comboNeoSporinProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 140, -1));
 
-        comboBenadrylProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "DiphenylMethoxy", "Loratadine", " " }));
+        comboBenadrylProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "DiphenylMethoxy", "Loratadine", " ", " " }));
         add(comboBenadrylProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 200, 140, -1));
 
         comboTylenolProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Acetominophen", "Lyrica", "Dolo" }));
