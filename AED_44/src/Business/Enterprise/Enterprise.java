@@ -21,7 +21,7 @@ public abstract class Enterprise extends Organization{
     }
     
     public enum EnterpriseType{
-        Drug("NGO"),
+        NGO("NGO"),
         Shelter("Shelter"),
         Distributor("Distributor"),
         QualityCheck("Quality Check"),
