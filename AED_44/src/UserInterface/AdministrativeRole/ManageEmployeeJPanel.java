@@ -154,7 +154,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
                                     .addComponent(nameJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                 .addGap(0, 24, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
-                .addGap(462, 462, 462)
+                .addGap(495, 495, 495)
                 .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -179,9 +179,9 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
                     .addComponent(jLabel2))
                 .addGap(26, 26, 26)
                 .addComponent(addJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(40, 40, 40)
+                .addGap(36, 36, 36)
                 .addComponent(backJButton)
-                .addContainerGap(232, Short.MAX_VALUE))
+                .addContainerGap(236, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
