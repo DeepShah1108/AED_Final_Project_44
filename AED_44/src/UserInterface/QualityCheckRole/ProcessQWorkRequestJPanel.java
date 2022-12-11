@@ -158,7 +158,7 @@ public class ProcessQWorkRequestJPanel extends javax.swing.JPanel {
         btnGenerateReport = new javax.swing.JButton();
         btnSave = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(0, 51, 51));
+        setBackground(new java.awt.Color(153, 255, 255));
 
         backJButton.setText("Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -167,8 +167,7 @@ public class ProcessQWorkRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setText("Result");
 
         tblProducts.setModel(new javax.swing.table.DefaultTableModel(
@@ -176,7 +175,7 @@ public class ProcessQWorkRequestJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Food Type", "Product", "Quantity"
+                "Drug Brand", "Drug", "Quantity"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -231,25 +230,20 @@ public class ProcessQWorkRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel12.setFont(new java.awt.Font("Bodoni MT", 1, 12)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel12.setText(" Clostridium, Enterobacter, Listeria, Salmonella, Shigella, Legionella)  ");
+        jLabel12.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel12.setText("Is the drug FDA Approved");
 
-        jLabel15.setFont(new java.awt.Font("Bodoni MT", 1, 12)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel15.setText("Are all products free from Food Adulteration? ( melamine, cyanuric acid");
+        jLabel15.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel15.setText("Are the Drugs following Government guidlines");
 
-        jLabel16.setFont(new java.awt.Font("Bodoni MT", 1, 12)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel16.setText(" Allergens, including gluten,Plasticizer contaminants,Colors, dyes, and additives  )  ");
+        jLabel16.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel16.setText("Does the Medicine achieve Target condition and treatments");
 
-        jLabel2.setFont(new java.awt.Font("Bodoni MT", 1, 12)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel2.setText("Are the products within the expiry date? ");
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel2.setText("Are the Drugs within the expiry date? ");
 
-        jLabel11.setFont(new java.awt.Font("Bodoni MT", 1, 12)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel11.setText("Are all products free from Pathogens? (Campylobacter, Bacillus, Yersinia");
+        jLabel11.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel11.setText("Does the drug contain Vitamin A , Carnosine");
 
         radioQ4No.setText("NO");
         radioQ4No.addActionListener(new java.awt.event.ActionListener() {
@@ -265,13 +259,10 @@ public class ProcessQWorkRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel13.setFont(new java.awt.Font("Bodoni MT", 1, 12)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel13.setText("Are all products free from contaminants? (Organophosphates,Heavy metals");
+        jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel13.setText("Is the druf free of animal-Testing and human  clinical testing");
 
-        jLabel14.setFont(new java.awt.Font("Bodoni MT", 1, 12)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel14.setText("Antibiotics, antimicrobials, growth regulators,Pesticides, fumigants, herbicides, insecticides)  ");
+        jLabel14.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
 
         radioQ5Yes.setText("YES");
         radioQ5Yes.addActionListener(new java.awt.event.ActionListener() {
@@ -280,13 +271,9 @@ public class ProcessQWorkRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel17.setFont(new java.awt.Font("Bodoni MT", 1, 12)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel17.setText("Are all products free from Process Generated chemical? (polyaromatic ");
+        jLabel17.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
 
-        jLabel18.setFont(new java.awt.Font("Bodoni MT", 1, 12)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel18.setText(" hydrocarbons (PAHs) 4-methyl imidazole (4-MEI))  ");
+        jLabel18.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
 
         radioQ5No.setText("NO");
         radioQ5No.addActionListener(new java.awt.event.ActionListener() {
@@ -302,13 +289,9 @@ public class ProcessQWorkRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel19.setFont(new java.awt.Font("Bodoni MT", 1, 12)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel19.setText("Are all products free from Spoilage Indicator? (Generic E. coli and coliforms,");
+        jLabel19.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
 
-        jLabel20.setFont(new java.awt.Font("Bodoni MT", 1, 12)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel20.setText(" and mould, sporeformers, acidophiles, thermophiles,mesophiles, aerobic and anaerobic plate counts )  ");
+        jLabel20.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
 
         radioQ6No.setText("NO");
         radioQ6No.addActionListener(new java.awt.event.ActionListener() {
@@ -317,13 +300,10 @@ public class ProcessQWorkRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel21.setFont(new java.awt.Font("Bodoni MT", 1, 12)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel21.setText("Is the Fat profiles (saturated, mono, poly, trans fats) Protein and carbohydrate content");
+        jLabel21.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
 
-        jLabel22.setFont(new java.awt.Font("Bodoni MT", 1, 12)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel22.setText(" Cholesterol Sugar profile Dietary fiber Vitamins, minerals, electrolytes appropriate ?");
+        jLabel22.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel22.setText("Is the Drug within asssigned dosage limit");
 
         radioQ7Yes.setText("YES");
         radioQ7Yes.addActionListener(new java.awt.event.ActionListener() {
@@ -363,7 +343,7 @@ public class ProcessQWorkRequestJPanel extends javax.swing.JPanel {
 
         jLabel7.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("NUTRITIONAL TEST  ");
+        jLabel7.setText("GUIDELINES TEST  ");
 
         jLabel8.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
@@ -371,7 +351,7 @@ public class ProcessQWorkRequestJPanel extends javax.swing.JPanel {
 
         jLabel9.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("SPOILAGE INDICATOR TEST");
+        jLabel9.setText("EXPIRY TEST");
 
         jLabel10.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
@@ -648,7 +628,7 @@ public class ProcessQWorkRequestJPanel extends javax.swing.JPanel {
                         .addGap(5, 5, 5)
                         .addComponent(jLabel3))
                     .addComponent(finalProgressBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(407, Short.MAX_VALUE))
+                .addContainerGap(401, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

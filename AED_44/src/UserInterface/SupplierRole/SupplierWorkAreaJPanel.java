@@ -90,7 +90,7 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(153, 255, 255));
 
         btnProductsList.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
-        btnProductsList.setText("View Product Request");
+        btnProductsList.setText("View Drug Request");
         btnProductsList.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnProductsListActionPerformed(evt);
@@ -165,7 +165,7 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
                         .addComponent(btnApprove, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(btnProductsList, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 216, Short.MAX_VALUE))
+                        .addGap(0, 372, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(enterpriseLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -186,7 +186,7 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
                     .addComponent(btnProductsList, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(assignJButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnApprove, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(167, Short.MAX_VALUE))
+                .addContainerGap(559, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
