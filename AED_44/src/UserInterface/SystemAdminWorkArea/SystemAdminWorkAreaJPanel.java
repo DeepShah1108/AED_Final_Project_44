@@ -100,6 +100,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         setLayout(new java.awt.BorderLayout());
 
         jTree.setBackground(new java.awt.Color(0, 51, 51));
+        jTree.setForeground(new java.awt.Color(255, 255, 255));
         jTree.addTreeSelectionListener(new javax.swing.event.TreeSelectionListener() {
             public void valueChanged(javax.swing.event.TreeSelectionEvent evt) {
                 jTreeValueChanged(evt);
@@ -111,90 +112,94 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 23, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 713, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 877, Short.MAX_VALUE)
         );
 
         jSplitPane1.setLeftComponent(jPanel1);
 
-        jPanel2.setBackground(new java.awt.Color(0, 51, 51));
+        jPanel2.setBackground(new java.awt.Color(153, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Bodoni MT", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setText("Selected Node:");
 
-        lblSelectedNode.setFont(new java.awt.Font("Bodoni MT", 1, 18)); // NOI18N
-        lblSelectedNode.setForeground(new java.awt.Color(255, 255, 255));
+        lblSelectedNode.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         lblSelectedNode.setText("<View_selected_node>");
 
-        btnManageNetwork.setBackground(new java.awt.Color(255, 255, 255));
-        btnManageNetwork.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
-        btnManageNetwork.setText("Manage City");
+        btnManageNetwork.setBackground(new java.awt.Color(0, 0, 102));
+        btnManageNetwork.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnManageNetwork.setForeground(new java.awt.Color(255, 255, 255));
+        btnManageNetwork.setText("Add Network");
         btnManageNetwork.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnManageNetworkActionPerformed(evt);
             }
         });
 
-        btnManageEnterprise.setBackground(new java.awt.Color(255, 255, 255));
-        btnManageEnterprise.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
-        btnManageEnterprise.setText("Manage Enterprise");
+        btnManageEnterprise.setBackground(new java.awt.Color(0, 0, 102));
+        btnManageEnterprise.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnManageEnterprise.setForeground(new java.awt.Color(255, 255, 255));
+        btnManageEnterprise.setText("Add Enterprise");
         btnManageEnterprise.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnManageEnterpriseActionPerformed(evt);
             }
         });
 
-        btnManageAdmin.setBackground(new java.awt.Color(255, 255, 255));
-        btnManageAdmin.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
-        btnManageAdmin.setText("Manage Enterprise Admin");
+        btnManageAdmin.setBackground(new java.awt.Color(0, 0, 102));
+        btnManageAdmin.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnManageAdmin.setForeground(new java.awt.Color(255, 255, 255));
+        btnManageAdmin.setText("Add Enterprise Admin");
         btnManageAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnManageAdminActionPerformed(evt);
             }
         });
 
-        enterpriseLabel.setFont(new java.awt.Font("Bodoni MT", 1, 24)); // NOI18N
-        enterpriseLabel.setForeground(new java.awt.Color(255, 255, 255));
-        enterpriseLabel.setText("MENU");
+        enterpriseLabel.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        enterpriseLabel.setText("MANAGE AREA");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(83, 83, 83)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(btnManageEnterprise, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnManageNetwork, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnManageAdmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(enterpriseLabel)
                     .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(235, 235, 235)
                         .addComponent(jLabel1)
-                        .addGap(18, 18, 18)
-                        .addComponent(lblSelectedNode)))
-                .addContainerGap())
+                        .addGap(124, 124, 124)
+                        .addComponent(lblSelectedNode))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(332, 332, 332)
+                        .addComponent(enterpriseLabel))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(321, 321, 321)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(btnManageEnterprise, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnManageNetwork, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnManageAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(173, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(34, 34, 34)
+                .addGap(49, 49, 49)
                 .addComponent(enterpriseLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
+                .addGap(27, 27, 27)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblSelectedNode)
-                    .addComponent(jLabel1))
-                .addGap(28, 28, 28)
+                    .addComponent(jLabel1)
+                    .addComponent(lblSelectedNode))
+                .addGap(51, 51, 51)
                 .addComponent(btnManageNetwork, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(87, 87, 87)
                 .addComponent(btnManageEnterprise, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
+                .addGap(95, 95, 95)
                 .addComponent(btnManageAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(405, 405, 405))
+                .addContainerGap(403, Short.MAX_VALUE))
         );
 
         jSplitPane1.setRightComponent(jPanel2);
