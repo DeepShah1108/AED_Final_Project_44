@@ -21,24 +21,24 @@ public class InventoryDirectory {
      
     private InventoryDirectory() {
         
-     	Inventory inv1  = new Inventory("101", "Bread","Bakery Products","Available",100);
-        Inventory inv2  = new Inventory("102", "Muffin","Bakery Products","Available",100);
-        Inventory inv3  = new Inventory("103", "Cakes","Bakery Products","Available",100);
-        Inventory inv4  = new Inventory("104", "Milk","Dairy Products","Available",100);
-        Inventory inv5  = new Inventory("105", "Eggs","Dairy Products","Available",100);
-        Inventory inv6  = new Inventory("106", "Butter","Dairy Products","Available",100);
-        Inventory inv7  = new Inventory("107", "Chicken","Meat Products","Available",100);
-        Inventory inv8  = new Inventory("108", "Turkey","Meat Products","Available",100);
-        Inventory inv9  = new Inventory("109", "Ham","Meat Products","Available",100);
-        Inventory inv10 = new Inventory("110", "Wheat","Cereals","Available",100);
-        Inventory inv11 = new Inventory("111", "Rice","Cereals","Available",100);
-        Inventory inv12 = new Inventory("112", "Oats","Cereals","Available",100);
-        Inventory inv13 = new Inventory("113", "Tomatoes","Vegetables","Available",100);
-        Inventory inv14 = new Inventory("114", "Potatoes","Vegetables","Available",100);
-        Inventory inv15 = new Inventory("115", "Capsicum","Vegetables","Available",100);
-        Inventory inv16 = new Inventory("116", "Banana","Fruits","Available",100);
-        Inventory inv17 = new Inventory("117", "Orange","Fruits","Available",100);
-        Inventory inv18 = new Inventory("118", "Apple","Fruits","Available",100);
+     	Inventory inv1  = new Inventory("101", "Acetaminophen","Dayquil","Available",100);
+        Inventory inv2  = new Inventory("102", "Dextromethorphan","Dayquil","Available",100);
+        Inventory inv3  = new Inventory("103", "Phenylephrine","Dayquil","Available",100);
+        Inventory inv4  = new Inventory("104", "Neomycin","NeoSporin","Available",100);
+        Inventory inv5  = new Inventory("105", "Bacitracin","NeoSporin","Available",100);
+        Inventory inv6  = new Inventory("106", "Polymyxin","NeoSporin","Available",100);
+        Inventory inv7  = new Inventory("107", "DiphenylMethoxy","Benadryl","Available",100);
+        Inventory inv8  = new Inventory("108", "Loratadine","Benadryl","Available",100);
+        Inventory inv9  = new Inventory("109", "FabiFlu","Benadryl","Available",100);
+        Inventory inv10 = new Inventory("110", "Acetominophen","Tylenol","Available",100);
+        Inventory inv11 = new Inventory("111", "Lyrica","Tylenol","Available",100);
+        Inventory inv12 = new Inventory("112", "Dolo","Tylenol","Available",100);
+        Inventory inv13 = new Inventory("113", "Crocin","Claritin","Available",100);
+        Inventory inv14 = new Inventory("114", "Cipla","Claritin","Available",100);
+        Inventory inv15 = new Inventory("115", "Niclo","Claritin","Available",100);
+        Inventory inv16 = new Inventory("116", "Ozempic","Advil","Available",100);
+        Inventory inv17 = new Inventory("117", "Methadone","Advil","Available",100);
+        Inventory inv18 = new Inventory("118", "Kevzara","Advil","Available",100);
         
         inventoryList.add(inv1);
         inventoryList.add(inv2);
