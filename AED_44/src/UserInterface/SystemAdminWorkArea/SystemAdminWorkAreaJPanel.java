@@ -31,50 +31,50 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         initComponents();
         this.userProcessContainer=userProcessContainer;
         this.ecosystem=system;
-        populateTree();
+        //populateTree();
     }
 
  
-    public void populateTree(){
-        DefaultTreeModel model=(DefaultTreeModel)jTree.getModel();
-        ArrayList<Network> networkList=ecosystem.getNetworkList();
-        ArrayList<Enterprise> enterpriseList;
-        ArrayList<Organization> organizationList;
-        
-        Network network;
-        Enterprise enterprise;
-        Organization organization;
-        
-        DefaultMutableTreeNode networks=new DefaultMutableTreeNode("Networks");
-        DefaultMutableTreeNode root=(DefaultMutableTreeNode)model.getRoot();
-        root.removeAllChildren();
-        root.insert(networks, 0);
-        
-        DefaultMutableTreeNode networkNode;
-        DefaultMutableTreeNode enterpriseNode;
-        DefaultMutableTreeNode organizationNode;
-        
-        for(int i=0;i<networkList.size();i++){
-            network=networkList.get(i);
-            networkNode=new DefaultMutableTreeNode(network.getName());
-            networks.insert(networkNode, i);
-            
-            enterpriseList=network.getEnterpriseDirectory().getEnterpriseList();
-            for(int j=0; j<enterpriseList.size();j++){
-                enterprise=enterpriseList.get(j);
-                enterpriseNode=new DefaultMutableTreeNode(enterprise.getName());
-                networkNode.insert(enterpriseNode, j);
-                
-                organizationList=enterprise.getOrganizationDirectory().getOrganizationList();
-                for(int k=0;k<organizationList.size();k++){
-                    organization=organizationList.get(i);
-                    organizationNode=new DefaultMutableTreeNode(organization.getName());
-                    enterpriseNode.insert(organizationNode, k);
-                }
-            }
-        }
-        model.reload();
-    }
+//    public void populateTree(){
+//        DefaultTreeModel model=(DefaultTreeModel)jTree.getModel();
+//        ArrayList<Network> networkList=ecosystem.getNetworkList();
+//        ArrayList<Enterprise> enterpriseList;
+//        ArrayList<Organization> organizationList;
+//        
+//        Network network;
+//        Enterprise enterprise;
+//        Organization organization;
+//        
+//        DefaultMutableTreeNode networks=new DefaultMutableTreeNode("Networks");
+//        DefaultMutableTreeNode root=(DefaultMutableTreeNode)model.getRoot();
+//        root.removeAllChildren();
+//        root.insert(networks, 0);
+//        
+//        DefaultMutableTreeNode networkNode;
+//        DefaultMutableTreeNode enterpriseNode;
+//        DefaultMutableTreeNode organizationNode;
+//        
+//        for(int i=0;i<networkList.size();i++){
+//            network=networkList.get(i);
+//            networkNode=new DefaultMutableTreeNode(network.getName());
+//            networks.insert(networkNode, i);
+//            
+//            enterpriseList=network.getEnterpriseDirectory().getEnterpriseList();
+//            for(int j=0; j<enterpriseList.size();j++){
+//                enterprise=enterpriseList.get(j);
+//                enterpriseNode=new DefaultMutableTreeNode(enterprise.getName());
+//                networkNode.insert(enterpriseNode, j);
+//                
+//                organizationList=enterprise.getOrganizationDirectory().getOrganizationList();
+//                for(int k=0;k<organizationList.size();k++){
+//                    organization=organizationList.get(i);
+//                    organizationNode=new DefaultMutableTreeNode(organization.getName());
+//                    enterpriseNode.insert(organizationNode, k);
+//                }
+//            }
+//        }
+//        model.reload();
+//    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -112,7 +112,9 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
