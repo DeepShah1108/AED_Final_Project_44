@@ -109,20 +109,23 @@ public class ShelterWorkAreaJPanel extends javax.swing.JPanel {
         jScrollPane2 = new javax.swing.JScrollPane();
         tblProducts = new javax.swing.JTable();
         showProductBtn = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 51, 51));
+        setBackground(new java.awt.Color(153, 255, 255));
 
-        requestTestJButton.setBackground(new java.awt.Color(255, 255, 255));
+        requestTestJButton.setBackground(new java.awt.Color(0, 0, 102));
         requestTestJButton.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
-        requestTestJButton.setText("Request Food Materials");
+        requestTestJButton.setForeground(new java.awt.Color(255, 255, 255));
+        requestTestJButton.setText("Request Drug");
         requestTestJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 requestTestJButtonActionPerformed(evt);
             }
         });
 
-        refreshTestJButton.setBackground(new java.awt.Color(255, 255, 255));
+        refreshTestJButton.setBackground(new java.awt.Color(0, 0, 102));
         refreshTestJButton.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
+        refreshTestJButton.setForeground(new java.awt.Color(255, 255, 255));
         refreshTestJButton.setText("Refresh");
         refreshTestJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -130,14 +133,14 @@ public class ShelterWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        enterpriseLabel.setFont(new java.awt.Font("Bodoni MT", 1, 24)); // NOI18N
-        enterpriseLabel.setForeground(new java.awt.Color(255, 255, 255));
+        enterpriseLabel.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         enterpriseLabel.setText("EnterPrise :");
 
-        valueLabel.setFont(new java.awt.Font("Bodoni MT", 1, 24)); // NOI18N
-        valueLabel.setForeground(new java.awt.Color(255, 255, 255));
+        valueLabel.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         valueLabel.setText("<value>");
 
+        shelterWorkRequestTable.setBackground(new java.awt.Color(204, 255, 255));
+        shelterWorkRequestTable.setForeground(new java.awt.Color(255, 255, 255));
         shelterWorkRequestTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -163,12 +166,13 @@ public class ShelterWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(shelterWorkRequestTable);
 
+        tblProducts.setBackground(new java.awt.Color(204, 255, 255));
         tblProducts.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "Food Type", "Product", "Quantity"
+                "Drug Brand", "Drug", "Quantity"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -181,38 +185,44 @@ public class ShelterWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane2.setViewportView(tblProducts);
 
-        showProductBtn.setBackground(new java.awt.Color(255, 255, 255));
+        showProductBtn.setBackground(new java.awt.Color(0, 0, 102));
         showProductBtn.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
-        showProductBtn.setText("Show Product");
+        showProductBtn.setForeground(new java.awt.Color(255, 255, 255));
+        showProductBtn.setText("Show Drug");
         showProductBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 showProductBtnActionPerformed(evt);
             }
         });
 
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 30)); // NOI18N
+        jLabel1.setText("REQUEST FOR DRUGS");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(325, 325, 325))
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jScrollPane1)
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(enterpriseLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(16, 16, 16)
+                        .addComponent(enterpriseLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(475, 475, 475)
-                        .addComponent(refreshTestJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(requestTestJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 305, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 764, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(showProductBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(563, 563, 563)
+                        .addComponent(refreshTestJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(81, 81, 81)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 822, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(showProductBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 809, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(requestTestJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(37, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -222,15 +232,17 @@ public class ShelterWorkAreaJPanel extends javax.swing.JPanel {
                     .addComponent(enterpriseLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(valueLabel)
                     .addComponent(refreshTestJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(53, 53, 53)
+                .addComponent(jLabel1)
+                .addGap(75, 75, 75)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(requestTestJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(showProductBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(39, 39, 39))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 91, Short.MAX_VALUE)
+                .addComponent(showProductBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(37, 37, 37)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(76, 76, 76))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -285,6 +297,7 @@ public class ShelterWorkAreaJPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel enterpriseLabel;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JButton refreshTestJButton;
