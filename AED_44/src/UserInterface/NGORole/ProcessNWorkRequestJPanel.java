@@ -60,7 +60,7 @@ public class ProcessNWorkRequestJPanel extends javax.swing.JPanel {
         submitJButton.setBackground(new java.awt.Color(0, 0, 102));
         submitJButton.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         submitJButton.setForeground(new java.awt.Color(255, 255, 255));
-        submitJButton.setText("Submit Result");
+        submitJButton.setText("Submit Request");
         submitJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 submitJButtonActionPerformed(evt);
@@ -68,8 +68,8 @@ public class ProcessNWorkRequestJPanel extends javax.swing.JPanel {
         });
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jLabel1.setText("Result:");
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        jLabel1.setText("Request:");
 
         backJButton.setBackground(new java.awt.Color(0, 0, 102));
         backJButton.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -82,54 +82,62 @@ public class ProcessNWorkRequestJPanel extends javax.swing.JPanel {
         });
 
         jLabel2.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jLabel2.setText("Processing Request");
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        jLabel2.setText("Processing Drug Request");
 
         radioRejected.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        radioRejected.setText("Rejected");
+        radioRejected.setText("Reject the Drug");
 
         radioApproved.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        radioApproved.setText("Approved");
+        radioApproved.setText("Approve the Drug\n");
+        radioApproved.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radioApprovedActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel2)
+                .addGap(290, 290, 290))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(475, 475, 475)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(submitJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(50, 50, 50)
+                        .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(383, 383, 383)
+                        .addComponent(submitJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(449, 449, 449)
-                        .addComponent(jLabel1)
-                        .addGap(49, 49, 49)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(radioRejected)
                             .addComponent(radioApproved)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(484, 484, 484)
-                        .addComponent(jLabel2)))
-                .addContainerGap(473, Short.MAX_VALUE))
+                        .addGap(226, 226, 226)
+                        .addComponent(jLabel1)))
+                .addContainerGap(326, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(58, 58, 58)
                 .addComponent(jLabel2)
-                .addGap(38, 38, 38)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(radioApproved))
-                .addGap(31, 31, 31)
+                .addGap(103, 103, 103)
+                .addComponent(radioApproved)
+                .addGap(10, 10, 10)
+                .addComponent(jLabel1)
+                .addGap(10, 10, 10)
                 .addComponent(radioRejected)
-                .addGap(70, 70, 70)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 157, Short.MAX_VALUE)
                 .addComponent(submitJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(209, 209, 209)
                 .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(560, Short.MAX_VALUE))
+                .addGap(49, 49, 49))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -165,6 +173,10 @@ public class ProcessNWorkRequestJPanel extends javax.swing.JPanel {
         layout.previous(userProcessContainer);
 
     }//GEN-LAST:event_backJButtonActionPerformed
+
+    private void radioApprovedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioApprovedActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_radioApprovedActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
