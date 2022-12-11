@@ -44,19 +44,19 @@ public class RequestFoodJPanel extends javax.swing.JPanel {
         this.business = business;
         valueLabel.setText(enterprise.getName());
 
-        comboBakeryProducts.setEnabled(false);
-        comboCerealsProducts.setEnabled(false);
-        comboDairyProducts.setEnabled(false);
-        comboMeatProducts.setEnabled(false);
-        comboVegetablesProducts.setEnabled(false);
-        comboFruitsProducts.setEnabled(false);
+        comboDayquilProducts.setEnabled(false);
+        comboTylenolProducts.setEnabled(false);
+        comboNeoSporinProducts.setEnabled(false);
+        comboBenadrylProducts.setEnabled(false);
+        comboClaritinProducts.setEnabled(false);
+        comboAdvilProducts.setEnabled(false);
         
-        quantBakery.setEnabled(false);
-        quantCereals.setEnabled(false);
-        quantDairy.setEnabled(false);
-        quantFruits.setEnabled(false);
-        quantMeat.setEnabled(false);
-        quantVegetables.setEnabled(false);
+        quantDayquil.setEnabled(false);
+        quantTylenol.setEnabled(false);
+        quantNeoSporin.setEnabled(false);
+        quantAdvil.setEnabled(false);
+        quantBenadryl.setEnabled(false);
+        quantClaritin.setEnabled(false);
         
         //btnReset.setEnabled(false);
 
@@ -77,26 +77,26 @@ public class RequestFoodJPanel extends javax.swing.JPanel {
         btnReset = new javax.swing.JButton();
         valueLabel = new javax.swing.JLabel();
         enterpriseLabel = new javax.swing.JLabel();
-        comboBakeryProducts = new javax.swing.JComboBox<>();
+        comboDayquilProducts = new javax.swing.JComboBox<>();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        checkBakery = new javax.swing.JCheckBox();
-        checkDairy = new javax.swing.JCheckBox();
-        checkMeat = new javax.swing.JCheckBox();
-        checkCereals = new javax.swing.JCheckBox();
-        checkVegetables = new javax.swing.JCheckBox();
-        checkFruits = new javax.swing.JCheckBox();
-        quantBakery = new javax.swing.JSpinner();
-        comboDairyProducts = new javax.swing.JComboBox<>();
-        comboMeatProducts = new javax.swing.JComboBox<>();
-        comboCerealsProducts = new javax.swing.JComboBox<>();
-        comboVegetablesProducts = new javax.swing.JComboBox<>();
-        comboFruitsProducts = new javax.swing.JComboBox<>();
-        quantDairy = new javax.swing.JSpinner();
-        quantMeat = new javax.swing.JSpinner();
-        quantFruits = new javax.swing.JSpinner();
-        quantVegetables = new javax.swing.JSpinner();
-        quantCereals = new javax.swing.JSpinner();
+        checkDayquil = new javax.swing.JCheckBox();
+        checkNeoSporin = new javax.swing.JCheckBox();
+        checkBenadryl = new javax.swing.JCheckBox();
+        checkTylenol = new javax.swing.JCheckBox();
+        checkClaritin = new javax.swing.JCheckBox();
+        checkAdvil = new javax.swing.JCheckBox();
+        quantDayquil = new javax.swing.JSpinner();
+        comboNeoSporinProducts = new javax.swing.JComboBox<>();
+        comboBenadrylProducts = new javax.swing.JComboBox<>();
+        comboTylenolProducts = new javax.swing.JComboBox<>();
+        comboClaritinProducts = new javax.swing.JComboBox<>();
+        comboAdvilProducts = new javax.swing.JComboBox<>();
+        quantNeoSporin = new javax.swing.JSpinner();
+        quantBenadryl = new javax.swing.JSpinner();
+        quantAdvil = new javax.swing.JSpinner();
+        quantClaritin = new javax.swing.JSpinner();
+        quantTylenol = new javax.swing.JSpinner();
         jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblProducts = new javax.swing.JTable();
@@ -140,10 +140,10 @@ public class RequestFoodJPanel extends javax.swing.JPanel {
 
         enterpriseLabel.setFont(new java.awt.Font("Bodoni MT", 1, 24)); // NOI18N
         enterpriseLabel.setText("Populate Items:");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 390, 240, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 350, 240, 30));
 
-        comboBakeryProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Acetaminophen", "Dextromethorphan", "Phenylephrine" }));
-        add(comboBakeryProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 140, 140, -1));
+        comboDayquilProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Acetaminophen", "Dextromethorphan", "Phenylephrine" }));
+        add(comboDayquilProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 140, 140, -1));
 
         jLabel4.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
         jLabel4.setText("Drug Brand:");
@@ -153,91 +153,91 @@ public class RequestFoodJPanel extends javax.swing.JPanel {
         jLabel5.setText("Drug:");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 110, -1, -1));
 
-        checkBakery.setText("Dayquil");
-        checkBakery.addActionListener(new java.awt.event.ActionListener() {
+        checkDayquil.setText("Dayquil");
+        checkDayquil.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkBakeryActionPerformed(evt);
+                checkDayquilActionPerformed(evt);
             }
         });
-        add(checkBakery, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 140, -1, -1));
+        add(checkDayquil, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 140, -1, -1));
 
-        checkDairy.setText("NeoSporin");
-        checkDairy.addActionListener(new java.awt.event.ActionListener() {
+        checkNeoSporin.setText("NeoSporin");
+        checkNeoSporin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkDairyActionPerformed(evt);
+                checkNeoSporinActionPerformed(evt);
             }
         });
-        add(checkDairy, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, -1, -1));
+        add(checkNeoSporin, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, -1, -1));
 
-        checkMeat.setText("Benadryl");
-        checkMeat.addActionListener(new java.awt.event.ActionListener() {
+        checkBenadryl.setText("Benadryl");
+        checkBenadryl.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkMeatActionPerformed(evt);
+                checkBenadrylActionPerformed(evt);
             }
         });
-        add(checkMeat, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, -1, -1));
+        add(checkBenadryl, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, -1, -1));
 
-        checkCereals.setText("Tylenol");
-        checkCereals.addActionListener(new java.awt.event.ActionListener() {
+        checkTylenol.setText("Tylenol");
+        checkTylenol.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkCerealsActionPerformed(evt);
+                checkTylenolActionPerformed(evt);
             }
         });
-        add(checkCereals, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, -1, -1));
+        add(checkTylenol, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, -1, -1));
 
-        checkVegetables.setText("Claritin");
-        checkVegetables.addActionListener(new java.awt.event.ActionListener() {
+        checkClaritin.setText("Claritin");
+        checkClaritin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkVegetablesActionPerformed(evt);
+                checkClaritinActionPerformed(evt);
             }
         });
-        add(checkVegetables, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 260, -1, -1));
+        add(checkClaritin, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 260, -1, -1));
 
-        checkFruits.setText("Advil");
-        checkFruits.addActionListener(new java.awt.event.ActionListener() {
+        checkAdvil.setText("Advil");
+        checkAdvil.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkFruitsActionPerformed(evt);
+                checkAdvilActionPerformed(evt);
             }
         });
-        add(checkFruits, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 290, -1, -1));
+        add(checkAdvil, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 290, -1, -1));
 
-        quantBakery.setModel(new javax.swing.SpinnerNumberModel(0, 0, 500, 1));
-        add(quantBakery, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 140, -1, -1));
+        quantDayquil.setModel(new javax.swing.SpinnerNumberModel(0, 0, 500, 1));
+        add(quantDayquil, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 140, -1, -1));
 
-        comboDairyProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Neomycin", "Bacitracin", "Polymyxin" }));
-        comboDairyProducts.addActionListener(new java.awt.event.ActionListener() {
+        comboNeoSporinProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Neomycin", "Bacitracin", "Polymyxin" }));
+        comboNeoSporinProducts.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                comboDairyProductsActionPerformed(evt);
+                comboNeoSporinProductsActionPerformed(evt);
             }
         });
-        add(comboDairyProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 140, -1));
+        add(comboNeoSporinProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 140, -1));
 
-        comboMeatProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "DiphenylMethoxy", "Loratadine", " " }));
-        add(comboMeatProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 200, 140, -1));
+        comboBenadrylProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "DiphenylMethoxy", "Loratadine", " " }));
+        add(comboBenadrylProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 200, 140, -1));
 
-        comboCerealsProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Acetominophen", "Lyrica", "Dolo" }));
-        add(comboCerealsProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 230, 140, -1));
+        comboTylenolProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Acetominophen", "Lyrica", "Dolo" }));
+        add(comboTylenolProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 230, 140, -1));
 
-        comboVegetablesProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Crocin", "Cipla", "Niclo" }));
-        add(comboVegetablesProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 260, 140, -1));
+        comboClaritinProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Crocin", "Cipla", "Niclo" }));
+        add(comboClaritinProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 260, 140, -1));
 
-        comboFruitsProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ozempic", "Methadone", "Kevzara" }));
-        add(comboFruitsProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 290, 140, -1));
+        comboAdvilProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ozempic", "Methadone", "Kevzara" }));
+        add(comboAdvilProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 290, 140, -1));
 
-        quantDairy.setModel(new javax.swing.SpinnerNumberModel(0, 0, 500, 1));
-        add(quantDairy, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 170, -1, -1));
+        quantNeoSporin.setModel(new javax.swing.SpinnerNumberModel(0, 0, 500, 1));
+        add(quantNeoSporin, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 170, -1, -1));
 
-        quantMeat.setModel(new javax.swing.SpinnerNumberModel(0, 0, 500, 1));
-        add(quantMeat, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 200, -1, -1));
+        quantBenadryl.setModel(new javax.swing.SpinnerNumberModel(0, 0, 500, 1));
+        add(quantBenadryl, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 200, -1, -1));
 
-        quantFruits.setModel(new javax.swing.SpinnerNumberModel(0, 0, 500, 1));
-        add(quantFruits, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 290, -1, -1));
+        quantAdvil.setModel(new javax.swing.SpinnerNumberModel(0, 0, 500, 1));
+        add(quantAdvil, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 290, -1, -1));
 
-        quantVegetables.setModel(new javax.swing.SpinnerNumberModel(0, 0, 500, 1));
-        add(quantVegetables, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 260, -1, -1));
+        quantClaritin.setModel(new javax.swing.SpinnerNumberModel(0, 0, 500, 1));
+        add(quantClaritin, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 260, -1, -1));
 
-        quantCereals.setModel(new javax.swing.SpinnerNumberModel(0, 0, 500, 1));
-        add(quantCereals, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 230, -1, -1));
+        quantTylenol.setModel(new javax.swing.SpinnerNumberModel(0, 0, 500, 1));
+        add(quantTylenol, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 230, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
         jLabel2.setText("Order Message");
@@ -262,7 +262,7 @@ public class RequestFoodJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblProducts);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 460, 610, 130));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 420, 610, 130));
 
         backJButton1.setBackground(new java.awt.Color(0, 0, 102));
         backJButton1.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
@@ -273,7 +273,7 @@ public class RequestFoodJPanel extends javax.swing.JPanel {
                 backJButton1ActionPerformed(evt);
             }
         });
-        add(backJButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 730, 160, 50));
+        add(backJButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 610, 160, 50));
 
         enterpriseLabel1.setFont(new java.awt.Font("Bodoni MT", 1, 24)); // NOI18N
         enterpriseLabel1.setText("EnterPrise :");
@@ -288,7 +288,7 @@ public class RequestFoodJPanel extends javax.swing.JPanel {
 
         //******************* Validation *********************
         
-         if(!(checkBakery.isSelected()) && !(checkDairy.isSelected()) && !(checkMeat.isSelected()) && !(checkCereals.isSelected()) && !(checkVegetables.isSelected())){
+         if(!(checkDayquil.isSelected()) && !(checkNeoSporin.isSelected()) && !(checkBenadryl.isSelected()) && !(checkTylenol.isSelected()) && !(checkClaritin.isSelected())){
             
             JOptionPane.showMessageDialog(null, "Please Select Products!", "Warning", JOptionPane.WARNING_MESSAGE);
             return;
@@ -309,88 +309,88 @@ public class RequestFoodJPanel extends javax.swing.JPanel {
        
         ArrayList<Products> productList = new ArrayList<>();
         
-        if (checkBakery.isSelected()) {
+        if (checkDayquil.isSelected()) {
             
-            if(quantBakery.getValue().equals(check)){
+            if(quantDayquil.getValue().equals(check)){
                 
                 JOptionPane.showMessageDialog(null, "Please Add Quantity!", "Warning", JOptionPane.WARNING_MESSAGE);
                 return;
             }
            
             Products p = new Products();
-            p.setProductName(String.valueOf(comboBakeryProducts.getSelectedItem()));
-            p.setProductType("BAKERY");
-            p.setQuantity((Integer) quantBakery.getValue());
+            p.setProductName(String.valueOf(comboDayquilProducts.getSelectedItem()));
+            p.setProductType("Dayquil");
+            p.setQuantity((Integer) quantDayquil.getValue());
             productList.add(p);
             populateData(productList);
         }
-        if (checkFruits.isSelected()) {
+        if (checkAdvil.isSelected()) {
             
-            if(quantFruits.getValue().equals(check)){
+            if(quantAdvil.getValue().equals(check)){
                 
                 JOptionPane.showMessageDialog(null, "Please Add Quantity!", "Warning", JOptionPane.WARNING_MESSAGE);
                 return;
             }
             Products p = new Products();
-            p.setProductName(String.valueOf(comboFruitsProducts.getSelectedItem()));
-            p.setProductType("FRUITS");
-            p.setQuantity((Integer) quantFruits.getValue());
+            p.setProductName(String.valueOf(comboAdvilProducts.getSelectedItem()));
+            p.setProductType("Advil");
+            p.setQuantity((Integer) quantAdvil.getValue());
              productList.add(p);
              populateData(productList);
         }
-        if (checkVegetables.isSelected()) {
+        if (checkClaritin.isSelected()) {
             
-            if(quantVegetables.getValue().equals(check)){
+            if(quantClaritin.getValue().equals(check)){
                 
                 JOptionPane.showMessageDialog(null, "Please Add Quantity!", "Warning", JOptionPane.WARNING_MESSAGE);
                 return;
             }
             Products p = new Products();
-            p.setProductName(String.valueOf(comboVegetablesProducts.getSelectedItem()));
-            p.setProductType("VEGETABLES");
-            p.setQuantity((Integer) quantVegetables.getValue());
+            p.setProductName(String.valueOf(comboClaritinProducts.getSelectedItem()));
+            p.setProductType("Claritin");
+            p.setQuantity((Integer) quantClaritin.getValue());
              productList.add(p);
              populateData(productList);
         }
-        if (checkCereals.isSelected()) {
+        if (checkTylenol.isSelected()) {
             
-            if(quantCereals.getValue().equals(check)){
+            if(quantTylenol.getValue().equals(check)){
                 
                 JOptionPane.showMessageDialog(null, "Please Add Quantity!", "Warning", JOptionPane.WARNING_MESSAGE);
                 return;
             }
             Products p = new Products();
-            p.setProductName(String.valueOf(comboCerealsProducts.getSelectedItem()));
-            p.setProductType("CEREALS");
-            p.setQuantity((Integer) quantCereals.getValue());
+            p.setProductName(String.valueOf(comboTylenolProducts.getSelectedItem()));
+            p.setProductType("Tylenol");
+            p.setQuantity((Integer) quantTylenol.getValue());
             productList.add(p);
             populateData(productList);
         }
-        if (checkMeat.isSelected()) {
+        if (checkBenadryl.isSelected()) {
             
-            if(quantMeat.getValue().equals(check)){
+            if(quantBenadryl.getValue().equals(check)){
                 
                 JOptionPane.showMessageDialog(null, "Please Add Quantity!", "Warning", JOptionPane.WARNING_MESSAGE);
                 return;
             }
             Products p = new Products();
-            p.setProductName(String.valueOf(comboMeatProducts.getSelectedItem()));
-            p.setProductType("MEAT");
-            p.setQuantity((Integer) quantMeat.getValue());
+            p.setProductName(String.valueOf(comboBenadrylProducts.getSelectedItem()));
+            p.setProductType("Benadryl");
+            p.setQuantity((Integer) quantBenadryl.getValue());
              productList.add(p);
              populateData(productList);
         }
-        if (checkDairy.isSelected()) {
+        if (checkNeoSporin.isSelected()) {
             
-            if(quantDairy.getValue().equals(check)){
+            if(quantNeoSporin.getValue().equals(check)){
                 
                 JOptionPane.showMessageDialog(null, "Please Add Quantity!", "Warning", JOptionPane.WARNING_MESSAGE);
                 return;
             }
             Products p = new Products();
-            p.setProductName(String.valueOf(comboDairyProducts.getSelectedItem()));
-            p.setProductType("DAIRY");
-            p.setQuantity((Integer) quantDairy.getValue());
+            p.setProductName(String.valueOf(comboNeoSporinProducts.getSelectedItem()));
+            p.setProductType("NeoSporin");
+            p.setQuantity((Integer) quantNeoSporin.getValue());
             productList.add(p);
             populateData(productList);
         }
@@ -436,26 +436,26 @@ public class RequestFoodJPanel extends javax.swing.JPanel {
         
         //Clearing the selected options
         
-       checkBakery.setSelected(false);
-       checkCereals.setSelected(false);
-       checkDairy.setSelected(false);
-       checkFruits.setSelected(false);
-       checkMeat.setSelected(false);
-       checkVegetables.setSelected(false);
+       checkDayquil.setSelected(false);
+       checkTylenol.setSelected(false);
+       checkNeoSporin.setSelected(false);
+       checkAdvil.setSelected(false);
+       checkBenadryl.setSelected(false);
+       checkClaritin.setSelected(false);
        
-        comboBakeryProducts.setEnabled(false);
-        comboCerealsProducts.setEnabled(false);
-        comboDairyProducts.setEnabled(false);
-        comboMeatProducts.setEnabled(false);
-        comboVegetablesProducts.setEnabled(false);
-        comboFruitsProducts.setEnabled(false);
+        comboDayquilProducts.setEnabled(false);
+        comboTylenolProducts.setEnabled(false);
+        comboNeoSporinProducts.setEnabled(false);
+        comboBenadrylProducts.setEnabled(false);
+        comboClaritinProducts.setEnabled(false);
+        comboAdvilProducts.setEnabled(false);
         
-        quantBakery.setEnabled(false);
-        quantCereals.setEnabled(false);
-        quantDairy.setEnabled(false);
-        quantFruits.setEnabled(false);
-        quantMeat.setEnabled(false);
-        quantVegetables.setEnabled(false);
+        quantDayquil.setEnabled(false);
+        quantTylenol.setEnabled(false);
+        quantNeoSporin.setEnabled(false);
+        quantAdvil.setEnabled(false);
+        quantBenadryl.setEnabled(false);
+        quantClaritin.setEnabled(false);
         
         btnReset.setEnabled(false);
         messageJTextField.setText("");
@@ -479,61 +479,61 @@ public class RequestFoodJPanel extends javax.swing.JPanel {
         
     private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
 
-       checkBakery.setSelected(false);
-       checkCereals.setSelected(false);
-       checkDairy.setSelected(false);
-       checkFruits.setSelected(false);
-       checkMeat.setSelected(false);
-       checkVegetables.setSelected(false);
+       checkDayquil.setSelected(false);
+       checkTylenol.setSelected(false);
+       checkNeoSporin.setSelected(false);
+       checkAdvil.setSelected(false);
+       checkBenadryl.setSelected(false);
+       checkClaritin.setSelected(false);
        
-        comboBakeryProducts.setEnabled(false);
-        comboCerealsProducts.setEnabled(false);
-        comboDairyProducts.setEnabled(false);
-        comboMeatProducts.setEnabled(false);
-        comboVegetablesProducts.setEnabled(false);
-        comboFruitsProducts.setEnabled(false);
+        comboDayquilProducts.setEnabled(false);
+        comboTylenolProducts.setEnabled(false);
+        comboNeoSporinProducts.setEnabled(false);
+        comboBenadrylProducts.setEnabled(false);
+        comboClaritinProducts.setEnabled(false);
+        comboAdvilProducts.setEnabled(false);
         
-        quantBakery.setEnabled(false);
-        quantCereals.setEnabled(false);
-        quantDairy.setEnabled(false);
-        quantFruits.setEnabled(false);
-        quantMeat.setEnabled(false);
-        quantVegetables.setEnabled(false);
+        quantDayquil.setEnabled(false);
+        quantTylenol.setEnabled(false);
+        quantNeoSporin.setEnabled(false);
+        quantAdvil.setEnabled(false);
+        quantBenadryl.setEnabled(false);
+        quantClaritin.setEnabled(false);
 
 
     }//GEN-LAST:event_btnResetActionPerformed
 
-    private void checkBakeryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkBakeryActionPerformed
-        comboBakeryProducts.setEnabled(true);
-        quantBakery.setEnabled(true);
+    private void checkDayquilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkDayquilActionPerformed
+        comboDayquilProducts.setEnabled(true);
+        quantDayquil.setEnabled(true);
         
         //*************** added recent ***********
-    }//GEN-LAST:event_checkBakeryActionPerformed
+    }//GEN-LAST:event_checkDayquilActionPerformed
 
-    private void checkDairyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkDairyActionPerformed
-        comboDairyProducts.setEnabled(true);
-        quantDairy.setEnabled(true);
-    }//GEN-LAST:event_checkDairyActionPerformed
+    private void checkNeoSporinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkNeoSporinActionPerformed
+        comboNeoSporinProducts.setEnabled(true);
+        quantNeoSporin.setEnabled(true);
+    }//GEN-LAST:event_checkNeoSporinActionPerformed
 
-    private void checkMeatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkMeatActionPerformed
-        comboMeatProducts.setEnabled(true);
-        quantMeat.setEnabled(true);
-    }//GEN-LAST:event_checkMeatActionPerformed
+    private void checkBenadrylActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkBenadrylActionPerformed
+        comboBenadrylProducts.setEnabled(true);
+        quantBenadryl.setEnabled(true);
+    }//GEN-LAST:event_checkBenadrylActionPerformed
 
-    private void checkCerealsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkCerealsActionPerformed
-        comboCerealsProducts.setEnabled(true);
-        quantCereals.setEnabled(true);
-    }//GEN-LAST:event_checkCerealsActionPerformed
+    private void checkTylenolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkTylenolActionPerformed
+        comboTylenolProducts.setEnabled(true);
+        quantTylenol.setEnabled(true);
+    }//GEN-LAST:event_checkTylenolActionPerformed
 
-    private void checkVegetablesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkVegetablesActionPerformed
-        comboVegetablesProducts.setEnabled(true);
-        quantVegetables.setEnabled(true);
-    }//GEN-LAST:event_checkVegetablesActionPerformed
+    private void checkClaritinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkClaritinActionPerformed
+        comboClaritinProducts.setEnabled(true);
+        quantClaritin.setEnabled(true);
+    }//GEN-LAST:event_checkClaritinActionPerformed
 
-    private void checkFruitsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkFruitsActionPerformed
-        comboFruitsProducts.setEnabled(true);
-        quantFruits.setEnabled(true);
-    }//GEN-LAST:event_checkFruitsActionPerformed
+    private void checkAdvilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkAdvilActionPerformed
+        comboAdvilProducts.setEnabled(true);
+        quantAdvil.setEnabled(true);
+    }//GEN-LAST:event_checkAdvilActionPerformed
 
     private void backJButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButton1ActionPerformed
         
@@ -546,26 +546,26 @@ public class RequestFoodJPanel extends javax.swing.JPanel {
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_backJButton1ActionPerformed
 
-    private void comboDairyProductsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboDairyProductsActionPerformed
+    private void comboNeoSporinProductsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboNeoSporinProductsActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_comboDairyProductsActionPerformed
+    }//GEN-LAST:event_comboNeoSporinProductsActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton1;
     private javax.swing.JButton btnReset;
-    private javax.swing.JCheckBox checkBakery;
-    private javax.swing.JCheckBox checkCereals;
-    private javax.swing.JCheckBox checkDairy;
-    private javax.swing.JCheckBox checkFruits;
-    private javax.swing.JCheckBox checkMeat;
-    private javax.swing.JCheckBox checkVegetables;
-    private javax.swing.JComboBox<String> comboBakeryProducts;
-    private javax.swing.JComboBox<String> comboCerealsProducts;
-    private javax.swing.JComboBox<String> comboDairyProducts;
-    private javax.swing.JComboBox<String> comboFruitsProducts;
-    private javax.swing.JComboBox<String> comboMeatProducts;
-    private javax.swing.JComboBox<String> comboVegetablesProducts;
+    private javax.swing.JCheckBox checkAdvil;
+    private javax.swing.JCheckBox checkBenadryl;
+    private javax.swing.JCheckBox checkClaritin;
+    private javax.swing.JCheckBox checkDayquil;
+    private javax.swing.JCheckBox checkNeoSporin;
+    private javax.swing.JCheckBox checkTylenol;
+    private javax.swing.JComboBox<String> comboAdvilProducts;
+    private javax.swing.JComboBox<String> comboBenadrylProducts;
+    private javax.swing.JComboBox<String> comboClaritinProducts;
+    private javax.swing.JComboBox<String> comboDayquilProducts;
+    private javax.swing.JComboBox<String> comboNeoSporinProducts;
+    private javax.swing.JComboBox<String> comboTylenolProducts;
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JLabel enterpriseLabel1;
     private javax.swing.JLabel jLabel1;
@@ -575,12 +575,12 @@ public class RequestFoodJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField messageJTextField;
-    private javax.swing.JSpinner quantBakery;
-    private javax.swing.JSpinner quantCereals;
-    private javax.swing.JSpinner quantDairy;
-    private javax.swing.JSpinner quantFruits;
-    private javax.swing.JSpinner quantMeat;
-    private javax.swing.JSpinner quantVegetables;
+    private javax.swing.JSpinner quantAdvil;
+    private javax.swing.JSpinner quantBenadryl;
+    private javax.swing.JSpinner quantClaritin;
+    private javax.swing.JSpinner quantDayquil;
+    private javax.swing.JSpinner quantNeoSporin;
+    private javax.swing.JSpinner quantTylenol;
     private javax.swing.JButton requestTestJButton;
     private javax.swing.JTable tblProducts;
     private javax.swing.JLabel valueLabel;
