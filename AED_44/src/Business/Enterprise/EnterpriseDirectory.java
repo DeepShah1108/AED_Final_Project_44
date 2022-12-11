@@ -32,7 +32,7 @@ public class EnterpriseDirectory {
     public Enterprise createAndAddEnterprise(String name,Enterprise.EnterpriseType type){
         Enterprise enterprise=null;
         if(type==Enterprise.EnterpriseType.NGO){
-            enterprise=new NGOEnterprise(name);
+            enterprise=new NGOEnterprise(name);  //Change Enterprise Here
             enterpriseList.add(enterprise);
         }
         else if(type==Enterprise.EnterpriseType.QualityCheck){
