@@ -102,149 +102,154 @@ public class RequestFoodJPanel extends javax.swing.JPanel {
         tblProducts = new javax.swing.JTable();
         backJButton1 = new javax.swing.JButton();
         enterpriseLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 51, 51));
+        setBackground(new java.awt.Color(153, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        requestTestJButton.setBackground(new java.awt.Color(0, 0, 102));
         requestTestJButton.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
+        requestTestJButton.setForeground(new java.awt.Color(255, 255, 255));
         requestTestJButton.setText("Submit Request");
         requestTestJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 requestTestJButtonActionPerformed(evt);
             }
         });
-        add(requestTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 406, 338, 44));
+        add(requestTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 140, 160, 50));
 
         jLabel1.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Quantity:");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(312, 94, -1, -1));
-        add(messageJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(152, 359, 226, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 110, 70, 20));
+        add(messageJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 280, 226, -1));
 
+        btnReset.setBackground(new java.awt.Color(0, 0, 102));
         btnReset.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
+        btnReset.setForeground(new java.awt.Color(255, 255, 255));
         btnReset.setText("Reset Options");
         btnReset.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnResetActionPerformed(evt);
             }
         });
-        add(btnReset, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 510, 338, 39));
+        add(btnReset, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 210, 160, 50));
 
         valueLabel.setFont(new java.awt.Font("Bodoni MT", 1, 24)); // NOI18N
-        valueLabel.setForeground(new java.awt.Color(255, 255, 255));
         valueLabel.setText("<value>");
-        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 30, 260, -1));
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, 260, -1));
 
         enterpriseLabel.setFont(new java.awt.Font("Bodoni MT", 1, 24)); // NOI18N
-        enterpriseLabel.setForeground(new java.awt.Color(255, 255, 255));
-        enterpriseLabel.setText("Summarize Items:");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 70, 240, 30));
+        enterpriseLabel.setText("Populate Items:");
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 390, 240, 30));
 
-        comboBakeryProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bread", "Muffin", "Cakes" }));
-        add(comboBakeryProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(186, 127, 72, -1));
+        comboBakeryProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Acetaminophen", "Dextromethorphan", "Phenylephrine" }));
+        add(comboBakeryProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 140, 140, -1));
 
         jLabel4.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Food Type:");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 94, -1, -1));
+        jLabel4.setText("Drug Brand:");
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 110, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Product:");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(186, 94, -1, -1));
+        jLabel5.setText("Drug:");
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 110, -1, -1));
 
-        checkBakery.setText("Bakery Products");
+        checkBakery.setText("Dayquil");
         checkBakery.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 checkBakeryActionPerformed(evt);
             }
         });
-        add(checkBakery, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 126, -1, -1));
+        add(checkBakery, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 140, -1, -1));
 
-        checkDairy.setText("Dairy Products");
+        checkDairy.setText("NeoSporin");
         checkDairy.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 checkDairyActionPerformed(evt);
             }
         });
-        add(checkDairy, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 157, -1, -1));
+        add(checkDairy, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, -1, -1));
 
-        checkMeat.setText("Meat Products");
+        checkMeat.setText("Benadryl");
         checkMeat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 checkMeatActionPerformed(evt);
             }
         });
-        add(checkMeat, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 188, -1, -1));
+        add(checkMeat, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, -1, -1));
 
-        checkCereals.setText("Cereals");
+        checkCereals.setText("Tylenol");
         checkCereals.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 checkCerealsActionPerformed(evt);
             }
         });
-        add(checkCereals, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 219, -1, -1));
+        add(checkCereals, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, -1, -1));
 
-        checkVegetables.setText("Vegetables");
+        checkVegetables.setText("Claritin");
         checkVegetables.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 checkVegetablesActionPerformed(evt);
             }
         });
-        add(checkVegetables, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, -1, -1));
+        add(checkVegetables, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 260, -1, -1));
 
-        checkFruits.setText("Fruits");
+        checkFruits.setText("Advil");
         checkFruits.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 checkFruitsActionPerformed(evt);
             }
         });
-        add(checkFruits, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 281, -1, -1));
+        add(checkFruits, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 290, -1, -1));
 
         quantBakery.setModel(new javax.swing.SpinnerNumberModel(0, 0, 500, 1));
-        add(quantBakery, new org.netbeans.lib.awtextra.AbsoluteConstraints(312, 127, -1, -1));
+        add(quantBakery, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 140, -1, -1));
 
-        comboDairyProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Milk", "Eggs", "Butter" }));
-        add(comboDairyProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(186, 158, 72, -1));
+        comboDairyProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Neomycin", "Bacitracin", "Polymyxin" }));
+        comboDairyProducts.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboDairyProductsActionPerformed(evt);
+            }
+        });
+        add(comboDairyProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 140, -1));
 
-        comboMeatProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Chicken", "Turkey", "Ham" }));
-        add(comboMeatProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(186, 189, 72, -1));
+        comboMeatProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "DiphenylMethoxy", "Loratadine", " " }));
+        add(comboMeatProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 200, 140, -1));
 
-        comboCerealsProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Wheat", "Rice", "Oats" }));
-        add(comboCerealsProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(186, 220, 72, -1));
+        comboCerealsProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Acetominophen", "Lyrica", "Dolo" }));
+        add(comboCerealsProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 230, 140, -1));
 
-        comboVegetablesProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tomatoes", "Potatoes", "Capsicum" }));
-        add(comboVegetablesProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(186, 251, -1, -1));
+        comboVegetablesProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Crocin", "Cipla", "Niclo" }));
+        add(comboVegetablesProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 260, 140, -1));
 
-        comboFruitsProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Banana", "Orange", "Apple" }));
-        add(comboFruitsProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(186, 282, 72, -1));
+        comboFruitsProducts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ozempic", "Methadone", "Kevzara" }));
+        add(comboFruitsProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 290, 140, -1));
 
         quantDairy.setModel(new javax.swing.SpinnerNumberModel(0, 0, 500, 1));
-        add(quantDairy, new org.netbeans.lib.awtextra.AbsoluteConstraints(312, 158, -1, -1));
+        add(quantDairy, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 170, -1, -1));
 
         quantMeat.setModel(new javax.swing.SpinnerNumberModel(0, 0, 500, 1));
-        add(quantMeat, new org.netbeans.lib.awtextra.AbsoluteConstraints(312, 189, -1, -1));
+        add(quantMeat, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 200, -1, -1));
 
         quantFruits.setModel(new javax.swing.SpinnerNumberModel(0, 0, 500, 1));
-        add(quantFruits, new org.netbeans.lib.awtextra.AbsoluteConstraints(312, 282, -1, -1));
+        add(quantFruits, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 290, -1, -1));
 
         quantVegetables.setModel(new javax.swing.SpinnerNumberModel(0, 0, 500, 1));
-        add(quantVegetables, new org.netbeans.lib.awtextra.AbsoluteConstraints(312, 251, -1, -1));
+        add(quantVegetables, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 260, -1, -1));
 
         quantCereals.setModel(new javax.swing.SpinnerNumberModel(0, 0, 500, 1));
-        add(quantCereals, new org.netbeans.lib.awtextra.AbsoluteConstraints(312, 220, -1, -1));
+        add(quantCereals, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 230, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Comment Message:");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 362, -1, -1));
+        jLabel2.setText("Order Message");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 280, -1, -1));
 
+        tblProducts.setBackground(new java.awt.Color(204, 255, 255));
         tblProducts.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "Food Type", "Product", "Quantity"
+                "Drug Brand", "Drug", "Quantity"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -257,21 +262,26 @@ public class RequestFoodJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblProducts);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 120, -1, -1));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 460, 610, 130));
 
+        backJButton1.setBackground(new java.awt.Color(0, 0, 102));
         backJButton1.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
+        backJButton1.setForeground(new java.awt.Color(255, 255, 255));
         backJButton1.setText("Back");
         backJButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButton1ActionPerformed(evt);
             }
         });
-        add(backJButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 461, 338, 39));
+        add(backJButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 730, 160, 50));
 
         enterpriseLabel1.setFont(new java.awt.Font("Bodoni MT", 1, 24)); // NOI18N
-        enterpriseLabel1.setForeground(new java.awt.Color(255, 255, 255));
         enterpriseLabel1.setText("EnterPrise :");
-        add(enterpriseLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 120, 30));
+        add(enterpriseLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 150, 30));
+
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel3.setText("SELECT DRUG AREA");
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 40, 250, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void requestTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestTestJButtonActionPerformed
@@ -536,6 +546,10 @@ public class RequestFoodJPanel extends javax.swing.JPanel {
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_backJButton1ActionPerformed
 
+    private void comboDairyProductsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboDairyProductsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comboDairyProductsActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton1;
@@ -556,6 +570,7 @@ public class RequestFoodJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel enterpriseLabel1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
