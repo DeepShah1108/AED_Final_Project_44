@@ -220,7 +220,7 @@ public class MainJFrame extends javax.swing.JFrame {
 //                // }
 //        } catch (Exception e) {
 //            e.printStackTrace();
-//            //jLabelResponse.setText("Email Address not found");
+//            jLabelResponse.setText("Email Address not found");
 //        }
         //*************************************End of addition for sending mail
 
