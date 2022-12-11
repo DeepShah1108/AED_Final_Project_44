@@ -4,6 +4,13 @@
  */
 package UserInterface.NGORole;
 
+import Business.WorkQueue.FoodRequirementRequest;
+import java.awt.CardLayout;
+import java.awt.Component;
+import javax.swing.ButtonGroup;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
 /**
  *
  * @author JANU
@@ -13,8 +20,23 @@ public class ProcessNWorkRequestJPanel extends javax.swing.JPanel {
     /**
      * Creates new form ProcessNWorkRequestJPanel
      */
-    public ProcessNWorkRequestJPanel() {
+    
+    private JPanel userProcessContainer;
+    private FoodRequirementRequest request;
+    
+    public ProcessNWorkRequestJPanel(JPanel userProcessContainer, FoodRequirementRequest request) {
         initComponents();
+        this.userProcessContainer = userProcessContainer;
+        this.request = request;
+        groupButton();
+    }
+    
+    private void groupButton( ) {
+
+    ButtonGroup bg1 = new ButtonGroup( );
+    bg1.add(radioApproved);
+    bg1.add(radioRejected);
+
     }
 
     /**
