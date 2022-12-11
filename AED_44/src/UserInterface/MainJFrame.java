@@ -56,12 +56,13 @@ public class MainJFrame extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jSplitPane.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
-        upperContainer.setBackground(new java.awt.Color(0, 0, 0));
+        upperContainer.setBackground(new java.awt.Color(0, 0, 102));
         upperContainer.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        upperContainer.add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, 104, -1));
+        upperContainer.add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, 104, -1));
 
         txtPassword.setUI(null);
         upperContainer.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 37, 3, 0));
@@ -73,17 +74,17 @@ public class MainJFrame extends javax.swing.JFrame {
                 btnLoginActionPerformed(evt);
             }
         });
-        upperContainer.add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, 104, 20));
+        upperContainer.add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 20, 120, -1));
 
         jLabel1.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Username");
-        upperContainer.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, -1, -1));
+        upperContainer.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Password");
-        upperContainer.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, -1, -1));
+        upperContainer.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 40, -1, -1));
 
         btnLogout.setFont(new java.awt.Font("Bodoni MT", 1, 14)); // NOI18N
         btnLogout.setText("Logout");
@@ -92,13 +93,13 @@ public class MainJFrame extends javax.swing.JFrame {
                 btnLogoutActionPerformed(evt);
             }
         });
-        upperContainer.add(btnLogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 120, 20));
-        upperContainer.add(txtPasswordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 40, 104, -1));
+        upperContainer.add(btnLogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 60, 120, 20));
+        upperContainer.add(txtPasswordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 40, 104, -1));
 
-        enterpriseLabel.setFont(new java.awt.Font("Bodoni MT", 1, 36)); // NOI18N
+        enterpriseLabel.setFont(new java.awt.Font("Times New Roman", 1, 39)); // NOI18N
         enterpriseLabel.setForeground(new java.awt.Color(255, 255, 255));
         enterpriseLabel.setText("MEDCARE");
-        upperContainer.add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 20, 190, 60));
+        upperContainer.add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 20, 230, 60));
 
         jLabel3.setText("jLabel3");
         upperContainer.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 20, 160, -1));
@@ -108,12 +109,12 @@ public class MainJFrame extends javax.swing.JFrame {
         userProcessContainer.setBackground(new java.awt.Color(51, 0, 0));
         userProcessContainer.setLayout(new java.awt.CardLayout());
 
-        jLabel4.setText("jLabel4");
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UserInterface/WhatsApp Image 2022-12-11 at 1.39.38 AM.jpeg"))); // NOI18N
         userProcessContainer.add(jLabel4, "card2");
 
         jSplitPane.setRightComponent(userProcessContainer);
 
-        getContentPane().add(jSplitPane, java.awt.BorderLayout.CENTER);
+        getContentPane().add(jSplitPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 995, 877));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
