@@ -27,8 +27,13 @@ public class OrganizationDirectory {
     public Organization createOrganization(Organization.Type type){
         Organization organization = null;
         
+        if (type.getValue().equals(Organization.Type.PharmacistOrganization.getValue())){
+            organization = new PharmacistOrganization();
+            organizationList.add(organization);
+        }
+        
         //for SuperStockist
-        if (type.getValue().equals(Organization.Type.SuperStockistOrganization.getValue())){
+        else if (type.getValue().equals(Organization.Type.SuperStockistOrganization.getValue())){
             organization = new SuperStockistAdminOrganization();
             organizationList.add(organization);
         }
@@ -38,10 +43,7 @@ public class OrganizationDirectory {
             organizationList.add(organization);
         }
         //for pharmacist
-        else if (type.getValue().equals(Organization.Type.PharmacistOrganization.getValue())){
-            organization = new PharmacistOrganization();
-            organizationList.add(organization);
-        }
+        
         //for distributor
         else if (type.getValue().equals(Organization.Type.DistributorOrganization.getValue())){
             organization = new DistributorOrganization();

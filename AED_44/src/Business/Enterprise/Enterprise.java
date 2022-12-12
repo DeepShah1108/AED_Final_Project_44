@@ -62,7 +62,7 @@ public abstract class Enterprise extends Organization{
     }
     //pharmacist
     public enum EnumType2{
-       Pharmacist("Shelter"),PharmacistOrganization("Pharmacist");
+       Pharmacist("Pharmacist"),PharmacistOrganization("Pharmacist");
        
        
         private String value;
