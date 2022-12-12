@@ -4,10 +4,13 @@
  */
 package Business;
 
+
 import Business.Network.Network;
+
 import Business.Organization.Organization;
+
 import Business.Role.Role;
-import Business.Role.SystemAdminRole;
+import Business.Role.SystemAdminRole;  //importing systemadmin role
 import java.util.ArrayList;
 
 /**
@@ -15,8 +18,9 @@ import java.util.ArrayList;
  * @author deepshah
  */
 public class EcoSystem extends Organization{
-    
+    //initializing
     private static EcoSystem business;
+    
     private ArrayList<Network> networkList;
     
     
@@ -27,6 +31,7 @@ public class EcoSystem extends Organization{
         return business;
     }
     
+    //create and add the network code
     public Network createAndAddNetwork(){
         Network network=new Network();
         networkList.add(network);
@@ -50,6 +55,9 @@ public class EcoSystem extends Organization{
     public void setNetworkList(ArrayList<Network> networkList) {
         this.networkList = networkList;
     }
+    
+    
+    //validation to check if the username is unique or not
     
     public boolean checkIfUserIsUnique(String userName){
         if(!this.getUserAccountDirectory().checkIfUsernameIsUnique(userName)){

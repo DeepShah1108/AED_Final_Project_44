@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class SuperStockistEnterprise extends Enterprise{
     
     public SuperStockistEnterprise(String name){
-        super(name,Enterprise.EnterpriseType.SuperStockist);
+        super(name,Enterprise.EnterpriseType.SuperStockist);   //SuperStoockist
     }
     
     @Override

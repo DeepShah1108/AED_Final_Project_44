@@ -16,13 +16,16 @@ public class Network {
     private String name;
     private EnterpriseDirectory enterpriseDirectory;
     
+    //Network
     public Network(){
         enterpriseDirectory=new EnterpriseDirectory();
     }
+    
+    //getName
     public String getName() {
         return name;
     }
-
+//getters and setters
     public void setName(String name) {
         this.name = name;
     }
