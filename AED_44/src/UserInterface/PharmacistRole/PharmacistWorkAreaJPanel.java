@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package UserInterface.ShelterRole;
+package UserInterface.PharmacistRole;
 
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
-import Business.Organization.ShelterOrganization;
+import Business.Organization.PharmacistOrganization;
 import Business.UserAccount.UserAccount;
-import Business.WorkQueue.FoodRequirementRequest;
+import Business.WorkQueue.DrugRequirementRequest;
 import Business.WorkQueue.Products;
 import Business.WorkQueue.WorkRequest;
 import java.awt.CardLayout;
@@ -22,18 +22,18 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author Pankaj Gorav
  */
-public class ShelterWorkAreaJPanel extends javax.swing.JPanel {
+public class PharmacistWorkAreaJPanel extends javax.swing.JPanel {
 
     /**
      * Creates new form ShelterWorkAreaJPanel
      */
     private JPanel userProcessContainer;
     private UserAccount userAccount;
-    private ShelterOrganization shelterOrganization;
+    private PharmacistOrganization shelterOrganization;
     private Enterprise enterprise;
     private EcoSystem business;
     
-    public ShelterWorkAreaJPanel(JPanel userProcessContainer, UserAccount userAccount, ShelterOrganization shelterOrganization, Enterprise enterprise, EcoSystem business) {
+    public PharmacistWorkAreaJPanel(JPanel userProcessContainer, UserAccount userAccount, PharmacistOrganization shelterOrganization, Enterprise enterprise, EcoSystem business) {
         initComponents();
         this.userProcessContainer=userProcessContainer;
         this.enterprise=enterprise;
@@ -58,7 +58,7 @@ public class ShelterWorkAreaJPanel extends javax.swing.JPanel {
             row[0] = request;
             row[1] = request.getReceiver();
             row[2] = request.getStatus();
-            String result = ((FoodRequirementRequest) request).getRequestResult();
+            String result = ((DrugRequirementRequest) request).getRequestResult();
             row[3] = result == null ? "Waiting" : result;
          
                 model.addRow(row);
@@ -75,7 +75,7 @@ public class ShelterWorkAreaJPanel extends javax.swing.JPanel {
         model.setRowCount(0);model.setRowCount(0);
         for (WorkRequest request : userAccount.getWorkQueue().getWorkRequestList())
         {
-        ArrayList<Products> productList = ((FoodRequirementRequest) request).getProductList();
+        ArrayList<Products> productList = ((DrugRequirementRequest) request).getProductList();
          if (productList!=null){
             for (Products p : productList) {
                 Object row[] = new Object[3];
@@ -249,7 +249,7 @@ public class ShelterWorkAreaJPanel extends javax.swing.JPanel {
     private void requestTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestTestJButtonActionPerformed
 
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-        userProcessContainer.add("RequestLabTestJPanel", new RequestFoodJPanel(userProcessContainer, userAccount, enterprise, business));
+        userProcessContainer.add("RequestLabTestJPanel", new RequestDrugJPanel(userProcessContainer, userAccount, enterprise, business));
         layout.next(userProcessContainer);
 
     }//GEN-LAST:event_requestTestJButtonActionPerformed
@@ -276,7 +276,7 @@ public class ShelterWorkAreaJPanel extends javax.swing.JPanel {
          
         //for (WorkRequest request : userAccount.getWorkQueue().getWorkRequestList())
         //{
-        ArrayList<Products> productList = ((FoodRequirementRequest) request).getProductList();
+        ArrayList<Products> productList = ((DrugRequirementRequest) request).getProductList();
          if (productList!=null){
             for (Products p : productList) {
                 Object row[] = new Object[3];

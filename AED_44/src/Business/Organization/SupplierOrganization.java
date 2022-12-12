@@ -1,22 +1,22 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Business.Organization;
 
+import Business.Role.MerchantRole;
 import Business.Role.Role;
 import Business.Role.SupplierRole;
 import java.util.ArrayList;
 
 /**
  *
- * @author Pankaj Gorav
+ * @author deepshah
  */
-public class SupplierOrganization extends Organization{
-    
+public class SupplierOrganization extends Organization {
+
       public SupplierOrganization() {
-        super(Organization.Type.SupplierFoodOrganization.getValue());
+        super(Organization.Type.SupplierOrganization.getValue());
     }
     
     @Override

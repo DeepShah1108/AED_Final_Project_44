@@ -7,13 +7,13 @@ package UserInterface.AdministrativeRole;
 
 import Business.Enterprise.Enterprise;
 import Business.Organization.DistributorOrganization;
-import Business.Organization.NGOAdminOrganization;
+import Business.Organization.SuperStockistAdminOrganization;
 import Business.Organization.Organization;
 import Business.Organization.Organization.Type;
 import Business.Organization.OrganizationDirectory;
-import Business.Organization.QualityOrganization;
-import Business.Organization.ShelterOrganization;
-import Business.Organization.SupplierOrganization;
+import Business.Organization.QualityLabOrganization;
+import Business.Organization.PharmacistOrganization;
+import Business.Organization.MerchantOrganization;
 import java.awt.CardLayout;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -314,22 +314,22 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
 //            organizationJComboBox.addItem(Organization.Type.SupplierFoodOrganization);
 //            
 //        }
-        System.out.println("yegdc" + enterprise.getEnterpriseType().getValue().equals(Enterprise.EnumType1.NGO.getValue()));
+        System.out.println("yegdc" + enterprise.getEnterpriseType().getValue().equals(Enterprise.EnumType1.SuperStockist.getValue()));
          System.out.println("yecfghgdc" + enterprise.getEnterpriseType().getValue());
         
-          System.out.println("yfrtdrecfggvegdc" + Enterprise.EnumType1.NGO.getValue());
+          System.out.println("yfrtdrecfggvegdc" + Enterprise.EnumType1.SuperStockist.getValue());
         
         
-        if (enterprise.getEnterpriseType().getValue().equals(Enterprise.EnumType1.NGO.getValue())) {
-            organizationJComboBox.addItem(Organization.Type.NgoFoodOrganization);
-        } else if (enterprise.getEnterpriseType().getValue().equals(Enterprise.EnumType2.Shelter.getValue())) {
-            organizationJComboBox.addItem(Organization.Type.ShelterFoodOrganization);
+        if (enterprise.getEnterpriseType().getValue().equals(Enterprise.EnumType1.SuperStockist.getValue())) {
+            organizationJComboBox.addItem(Organization.Type.SuperStockistOrganization);
+        } else if (enterprise.getEnterpriseType().getValue().equals(Enterprise.EnumType2.Pharmacist.getValue())) {
+            organizationJComboBox.addItem(Organization.Type.PharmacistOrganization);
         } else if (enterprise.getEnterpriseType().getValue().equals(Enterprise.EnumType3.Distributor.getValue())) {
-            organizationJComboBox.addItem(Organization.Type.DistributorFoodOrganization);
-        } else if (enterprise.getEnterpriseType().getValue().equals(Enterprise.EnumType4.QualityCheck.getValue())) {
-            organizationJComboBox.addItem(Organization.Type.QualityCheckFoodOrganization);
-        } else if (enterprise.getEnterpriseType().getValue().equals(Enterprise.EnumType5.Supplier.getValue())) {
-            organizationJComboBox.addItem(Organization.Type.SupplierFoodOrganization);
+            organizationJComboBox.addItem(Organization.Type.DistributorOrganization);
+        } else if (enterprise.getEnterpriseType().getValue().equals(Enterprise.EnumType4.QualityLab.getValue())) {
+            organizationJComboBox.addItem(Organization.Type.QualityLabOrganization);
+        } else if (enterprise.getEnterpriseType().getValue().equals(Enterprise.EnumType5.Merchant.getValue())) {
+            organizationJComboBox.addItem(Organization.Type.MerchantOrganization);
         }
 
     }

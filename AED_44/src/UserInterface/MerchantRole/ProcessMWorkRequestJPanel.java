@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package UserInterface.SupplierRole;
+package UserInterface.MerchantRole;
 
 /**
  *
  * @author Pankaj Gorav
  */
-public class ProcessSWorkRequestJPanel extends javax.swing.JPanel {
+public class ProcessMWorkRequestJPanel extends javax.swing.JPanel {
 
     /**
      * Creates new form ProcessWorkRequestJPanel
      */
-    public ProcessSWorkRequestJPanel() {
+    public ProcessMWorkRequestJPanel() {
         initComponents();
     }
 

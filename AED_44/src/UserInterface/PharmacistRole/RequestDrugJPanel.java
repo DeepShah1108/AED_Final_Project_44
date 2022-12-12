@@ -3,16 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package UserInterface.ShelterRole;
+package UserInterface.PharmacistRole;
 
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
-import Business.Enterprise.NGOEnterprise;
+import Business.Enterprise.SuperStockistEnterprise;
 import Business.Network.Network;
-import Business.Organization.NGOAdminOrganization;
+import Business.Organization.SuperStockistAdminOrganization;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
-import Business.WorkQueue.FoodRequirementRequest;
+import Business.WorkQueue.DrugRequirementRequest;
 import Business.WorkQueue.Products;
 import java.awt.CardLayout;
 import java.awt.Component;
@@ -25,7 +25,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author Team Void
  */
-public class RequestFoodJPanel extends javax.swing.JPanel {
+public class RequestDrugJPanel extends javax.swing.JPanel {
 
     /**
      * Creates new form RequestFoodJPanel
@@ -36,7 +36,7 @@ public class RequestFoodJPanel extends javax.swing.JPanel {
     private EcoSystem business;
    
 
-    public RequestFoodJPanel(JPanel userProcessContainer, UserAccount userAccount, Enterprise enterprise, EcoSystem business) {
+    public RequestDrugJPanel(JPanel userProcessContainer, UserAccount userAccount, Enterprise enterprise, EcoSystem business) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;
@@ -397,7 +397,7 @@ public class RequestFoodJPanel extends javax.swing.JPanel {
         
        
        
-        FoodRequirementRequest request = new FoodRequirementRequest();
+        DrugRequirementRequest request = new DrugRequirementRequest();
         request.setMessage(message);
         request.setSender(userAccount);
         request.setStatus("Sent");
@@ -409,16 +409,16 @@ public class RequestFoodJPanel extends javax.swing.JPanel {
 
             for (Enterprise e : n.getEnterpriseDirectory().getEnterpriseList()) {
 
-                   e.setEnterpriseType(Enterprise.EnterpriseType.NGO);
+                   e.setEnterpriseType(Enterprise.EnterpriseType.SuperStockist);
                    //below changes are made for twice appearance of request on Shelter screen
                    //if (e.getEnterpriseType().getValue().equals("NGO"))
-                 if (e instanceof NGOEnterprise) {
+                 if (e instanceof SuperStockistEnterprise) {
 
                     System.out.println(e.getEnterpriseType().getValue().equals("NGO") + "Chal ra hai");
 
                     Organization org = null;
                     for (Organization organization : e.getOrganizationDirectory().getOrganizationList()) {
-                        if (organization instanceof NGOAdminOrganization) { //changed from shlter to ngo organization
+                        if (organization instanceof SuperStockistAdminOrganization) { //changed from shlter to ngo organization
                             org = organization;
                             break;
                         }
@@ -540,7 +540,7 @@ public class RequestFoodJPanel extends javax.swing.JPanel {
          userProcessContainer.remove(this);
         Component[] componentArray = userProcessContainer.getComponents();
         Component component = componentArray[componentArray.length - 1];
-        ShelterWorkAreaJPanel dwjp = (ShelterWorkAreaJPanel) component;
+        PharmacistWorkAreaJPanel dwjp = (PharmacistWorkAreaJPanel) component;
         dwjp.populateRequestTable();
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);

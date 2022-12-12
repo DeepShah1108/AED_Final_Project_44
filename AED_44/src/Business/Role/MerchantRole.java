@@ -8,20 +8,20 @@ package Business.Role;
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Organization.Organization;
-import Business.Organization.ShelterOrganization;
+import Business.Organization.MerchantOrganization;
 import Business.UserAccount.UserAccount;
-import UserInterface.ShelterRole.ShelterWorkAreaJPanel;
+import UserInterface.MerchantRole.MerchantWorkAreaJPanel;
 import javax.swing.JPanel;
 
 /**
  *
- * @author Pankaj Gorav
+ * @author deepshah
  */
-public class ShelterRole extends Role {
+public class MerchantRole extends Role {
     
-       @Override
+        @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business) {
-        return new ShelterWorkAreaJPanel(userProcessContainer, account, (ShelterOrganization)organization, enterprise, business);
+        return new MerchantWorkAreaJPanel(userProcessContainer, account, (MerchantOrganization)organization, enterprise,business);
     }
     
 }

@@ -5,7 +5,7 @@
  */
 package Business.Organization;
 
-import Business.Role.AdminRole;
+import Business.Role.QualityLabRole;
 import Business.Role.Role;
 import java.util.ArrayList;
 
@@ -13,16 +13,17 @@ import java.util.ArrayList;
  *
  * @author deepshah
  */
-public class AdminOrganization extends Organization{
-    
-     public AdminOrganization() {
-        super(Organization.Type.Admin.getValue());
+public class QualityLabOrganization extends Organization{
+   
+     public QualityLabOrganization() {
+        super(Organization.Type.QualityLabOrganization.getValue());
     }
     
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new AdminRole());
+        roles.add(new QualityLabRole());
         return roles;
     }
+    
 }

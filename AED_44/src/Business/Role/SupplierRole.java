@@ -1,7 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Business.Role;
 
@@ -15,13 +14,14 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Pankaj Gorav
+ * @author deepshah
  */
-public class SupplierRole extends Role {
-    
-        @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business) {
-        return new SupplierWorkAreaJPanel(userProcessContainer, account, (SupplierOrganization)organization, enterprise,business);
+public class SupplierRole extends Role{
+
+    @Override
+    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount userAccount, Organization organization, Enterprise enterprise, EcoSystem business) {
+        return new SupplierWorkAreaJPanel(userProcessContainer, userAccount, (SupplierOrganization)organization, enterprise);
     }
+    
     
 }

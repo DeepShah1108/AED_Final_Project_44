@@ -10,12 +10,12 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Team Void
+ * @author deepshah
  */
-public class SupplierEnterprise extends Enterprise{
+public class MerchantEnterprise extends Enterprise{
     
-    public SupplierEnterprise(String name){
-        super(name,Enterprise.EnterpriseType.Supplier);
+    public MerchantEnterprise(String name){
+        super(name,Enterprise.EnterpriseType.Merchant);
     }
     
     @Override

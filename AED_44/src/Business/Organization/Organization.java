@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Team Void
+ * @author deepshah
  */
 public abstract class Organization {
     
@@ -26,11 +26,12 @@ public abstract class Organization {
     
     public enum Type{
         Admin("Admin Organization"),
-        NgoFoodOrganization("NGO Organization"), 
-        ShelterFoodOrganization("Shelter Organization"), 
-        DistributorFoodOrganization("Distributor Organization"), 
-        QualityCheckFoodOrganization("Quality Check Organization"),
-        SupplierFoodOrganization("Supplier Organization");
+        SuperStockistOrganization("SuperStockist Organization"), 
+        PharmacistOrganization("Pharmacist Organization"), 
+        DistributorOrganization("Distributor Organization"), 
+        QualityLabOrganization("QualityLab Organization"),
+        MerchantOrganization("Merchant Organization"),
+        SupplierOrganization("Supplier Organization");
         
         private String value;
         private Type(String value) {

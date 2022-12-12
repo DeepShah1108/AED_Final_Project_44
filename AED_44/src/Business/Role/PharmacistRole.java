@@ -7,22 +7,21 @@ package Business.Role;
 
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
-import Business.Organization.DistributorOrganization;
 import Business.Organization.Organization;
+import Business.Organization.PharmacistOrganization;
 import Business.UserAccount.UserAccount;
-import UserInterface.DistributorRole.DistributorWorkAreaJPanel;
+import UserInterface.PharmacistRole.PharmacistWorkAreaJPanel;
 import javax.swing.JPanel;
 
 /**
  *
  * @author deepshah
  */
-public class DistributorRole extends Role {
- 
-      @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business) {
-        return new DistributorWorkAreaJPanel(userProcessContainer, account, (DistributorOrganization)organization, enterprise, business);
-    }
+public class PharmacistRole extends Role {
     
+       @Override
+    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business) {
+        return new PharmacistWorkAreaJPanel(userProcessContainer, account, (PharmacistOrganization)organization, enterprise, business);
+    }
     
 }
