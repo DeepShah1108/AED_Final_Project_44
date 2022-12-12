@@ -23,7 +23,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author JANU
+ * @author Anouksha
  */
 public class SuperStockistWorkAreaJPanel extends javax.swing.JPanel {
 
