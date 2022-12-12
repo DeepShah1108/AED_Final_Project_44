@@ -700,9 +700,7 @@ public class ProcessQWorkRequestJPanel extends javax.swing.JPanel {
     private void radioQ3NoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioQ3NoActionPerformed
         // TODO add your handling code here:
         int value = 0;
-        //   int internalvalue=10;
-
-        // finalProgressBar.setEnabled(true);
+      
         finalProgressBar.setBackground(Color.red);
         chemicalProgressBar.setBackground(Color.red);
         nutritionProgressBar.setBackground(Color.red);
@@ -715,9 +713,7 @@ public class ProcessQWorkRequestJPanel extends javax.swing.JPanel {
         microbioProgressBar.setValue(value);
         spoilageProgressBar.setValue(value);
 
-        // int currentvalue=finalProgressBar.getValue();
-        // int newvalue=currentvalue-15;
-        // finalProgressBar.setValue(newvalue);
+       
 
     }//GEN-LAST:event_radioQ3NoActionPerformed
 
@@ -725,7 +721,7 @@ public class ProcessQWorkRequestJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
 
         int value = 0;
-        //   int internalvalue=10;
+      
 
         finalProgressBar.setBackground(Color.red);
         chemicalProgressBar.setBackground(Color.red);
@@ -739,18 +735,14 @@ public class ProcessQWorkRequestJPanel extends javax.swing.JPanel {
         microbioProgressBar.setValue(value);
         spoilageProgressBar.setValue(value);
 
-        // int currentvalue=finalProgressBar.getValue();
-        // int newvalue=currentvalue-15;
-        // finalProgressBar.setValue(newvalue);
+     
 
     }//GEN-LAST:event_radioQ2NoActionPerformed
 
     private void radioQ4NoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioQ4NoActionPerformed
         // TODO add your handling code here:
         int value = 0;
-        //   int internalvalue=10;
-
-        // finalProgressBar.setEnabled(true);
+      
         finalProgressBar.setBackground(Color.red);
         chemicalProgressBar.setBackground(Color.red);
         nutritionProgressBar.setBackground(Color.red);
@@ -763,9 +755,7 @@ public class ProcessQWorkRequestJPanel extends javax.swing.JPanel {
         microbioProgressBar.setValue(value);
         spoilageProgressBar.setValue(value);
 
-        // int currentvalue=finalProgressBar.getValue();
-        // int newvalue=currentvalue-15;
-        // finalProgressBar.setValue(newvalue);
+       
 
     }//GEN-LAST:event_radioQ4NoActionPerformed
 
@@ -787,18 +777,16 @@ public class ProcessQWorkRequestJPanel extends javax.swing.JPanel {
         finalProgressBar.setValue(newvalue);
 
         int internalvalue = 100;
-        //  int newinternalvalue=internalvalue-15;
+       
         chemicalProgressBar.setValue(internalvalue);
-        // nutritionProgressBar.setValue(internalvalue);
+  
 
     }//GEN-LAST:event_radioQ5YesActionPerformed
 
     private void radioQ5NoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioQ5NoActionPerformed
         // TODO add your handling code here:
         int value = 0;
-        //   int internalvalue=10;
-
-        // finalProgressBar.setEnabled(true);
+     
         finalProgressBar.setBackground(Color.red);
         chemicalProgressBar.setBackground(Color.red);
         nutritionProgressBar.setBackground(Color.red);
@@ -811,9 +799,7 @@ public class ProcessQWorkRequestJPanel extends javax.swing.JPanel {
         microbioProgressBar.setValue(value);
         spoilageProgressBar.setValue(value);
 
-        // int currentvalue=finalProgressBar.getValue();
-        // int newvalue=currentvalue-15;
-        // finalProgressBar.setValue(newvalue);
+      
 
     }//GEN-LAST:event_radioQ5NoActionPerformed
 
@@ -831,9 +817,7 @@ public class ProcessQWorkRequestJPanel extends javax.swing.JPanel {
     private void radioQ6NoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioQ6NoActionPerformed
         // TODO add your handling code here:
         int value = 0;
-        //   int internalvalue=10;
-
-        // finalProgressBar.setEnabled(true);
+     
         finalProgressBar.setBackground(Color.red);
         chemicalProgressBar.setBackground(Color.red);
         nutritionProgressBar.setBackground(Color.red);
@@ -845,10 +829,6 @@ public class ProcessQWorkRequestJPanel extends javax.swing.JPanel {
         nutritionProgressBar.setValue(value);
         microbioProgressBar.setValue(value);
         spoilageProgressBar.setValue(value);
-
-        // int currentvalue=finalProgressBar.getValue();
-        // int newvalue=currentvalue-15;
-        // finalProgressBar.setValue(newvalue);
 
     }//GEN-LAST:event_radioQ6NoActionPerformed
 
@@ -890,9 +870,7 @@ public class ProcessQWorkRequestJPanel extends javax.swing.JPanel {
         microbioProgressBar.setValue(value);
         spoilageProgressBar.setValue(value);
 
-        // int currentvalue=finalProgressBar.getValue();
-        // int newvalue=currentvalue-15;
-        // finalProgressBar.setValue(newvalue);
+
 
     }//GEN-LAST:event_radioQ7NoActionPerformed
 
@@ -900,20 +878,7 @@ public class ProcessQWorkRequestJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         int value = 0;
         //
-        //         radioQ1Yes.setSelected(false);
-        //         radioQ1No.setSelected(false);
-        //         radioQ2Yes.setSelected(false);
-        //         radioQ2No.setSelected(false);
-        //         radioQ3Yes.setSelected(false);
-        //         radioQ3No.setSelected(false);
-        //         radioQ4Yes.setSelected(false);
-        //         radioQ4No.setSelected(false);
-        //         radioQ5Yes.setSelected(false);
-        //         radioQ5No.setSelected(false);
-        //         radioQ6Yes.setSelected(false);
-        //         radioQ6No.setSelected(false);
-        //         radioQ7Yes.setSelected(false);
-        //         radioQ7No.setSelected(false);
+      
 
         ButtonGroup bg1 = new ButtonGroup();
         bg1.add(radioQ1Yes);

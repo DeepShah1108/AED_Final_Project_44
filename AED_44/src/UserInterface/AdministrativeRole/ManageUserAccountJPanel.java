@@ -220,7 +220,7 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
 
     private void createUserJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createUserJButtonActionPerformed
         
-        //******************* Validation ********************
+        //Validation 
         
         String uName = nameJTextField.getText();
         String pass = passwordJTextField.getText();
@@ -230,9 +230,7 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "Fields Cannot Be Empty!", "Warning",JOptionPane.WARNING_MESSAGE);
             return;
         }
-        
-        //**************************************************
-        
+   
         String userName = nameJTextField.getText();
         String password = passwordJTextField.getText();
         Organization organization = (Organization) organizationJComboBox.getSelectedItem();

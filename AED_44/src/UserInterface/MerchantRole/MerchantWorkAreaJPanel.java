@@ -237,24 +237,7 @@ public class MerchantWorkAreaJPanel extends javax.swing.JPanel {
 
             System.out.println(request.getSuppProductList() + "Suppliser List");
 
-//            for (Inventory inSupp : InventoryDirectory.getInventoryList()) {
-//                for (Products prod : request.getSuppProductList()) {
-//                    if (prod.getProductName().equalsIgnoreCase(inSupp.getProductName())) {
-//                        count = prod.getQuantity();
-//                        oldCount = inSupp.getQuantity();
-//                        newCount = count + oldCount;
-//                        inSupp.setQuantity(newCount);
-//                        System.out.println(prod.getProductName());
-//                        System.out.println(oldCount + "oldCount");
-//                        System.out.println(newCount + "newCount");
-////                        suppCount=inSupp.getQuantity();
-////                        reqCount=prod.getQuantity();
-////                        suppCount=-reqCount;
-////                        inSupp.setQuantity(suppCount);
-//
-//                    }
-//                }
-//            }
+//           
             System.out.println("=---------2nd for Prod Name");
             int reqCount = 0, suppCount = 0, changeCount = 0;
             for (Inventory inSupp : InventoryDirectory.getInventoryList()) {
@@ -269,10 +252,7 @@ public class MerchantWorkAreaJPanel extends javax.swing.JPanel {
                             changeCount = suppCount - reqCount;
                             inSupp.setQuantity(changeCount);
                             System.out.println("CHECK COUNT"+ changeCount);
-//                        suppCount=inSupp.getQuantity();
-//                        reqCount=prod.getQuantity();
-//                        suppCount=-reqCount;
-//                        inSupp.setQuantity(suppCount);
+
                         }
                         else
                         {
@@ -283,17 +263,15 @@ public class MerchantWorkAreaJPanel extends javax.swing.JPanel {
                     }
                 }
             }
-            //****************************************changed
-            //resultJTextField.setText();
-            //   request.setRequestResult("Approved");
+   
             request.setStatus("Sent to Quality");
             if (request.getReceiver() == userAccount) {
                 this.request.setReceiver(null);
 
             }
-            //****************************************changed
 
-            //InventoryDirectory.setInventoryList(inventoryList);
+
+
             for (Network n : ecosystem.getNetworkList()) {
 
                 for (Enterprise e : n.getEnterpriseDirectory().getEnterpriseList()) {

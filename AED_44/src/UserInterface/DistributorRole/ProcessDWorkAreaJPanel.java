@@ -359,9 +359,7 @@ public class ProcessDWorkAreaJPanel extends javax.swing.JPanel {
     private void btnSupplierFoodActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSupplierFoodActionPerformed
         // TODO add your handling code here:
         Organization orgSupp=null;
-//        resultJTextField.setText("Sent to Supplier");
-//        request.setRequestResult(resultJTextField.getText());
-//        request.setStatus("Sent to Supplier");
+      
         ArrayList<Products> productListSupp = new ArrayList<>();
         for (String str : requiredProdMap.keySet()) {
             Products p = new Products();
@@ -370,7 +368,7 @@ public class ProcessDWorkAreaJPanel extends javax.swing.JPanel {
             productListSupp.add(p);
 
         }
-      // request.setMessage("Process Required Food");
+
         request.setSender(userAccount);
         if(request.getReceiver()==userAccount)
         {
