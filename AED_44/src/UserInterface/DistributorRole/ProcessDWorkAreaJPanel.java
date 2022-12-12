@@ -173,7 +173,7 @@ public class ProcessDWorkAreaJPanel extends javax.swing.JPanel {
         btnProductType.setBackground(new java.awt.Color(0, 0, 102));
         btnProductType.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnProductType.setForeground(new java.awt.Color(255, 255, 255));
-        btnProductType.setText("Doctor Type");
+        btnProductType.setText("Drug Brand");
         btnProductType.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnProductTypeActionPerformed(evt);
