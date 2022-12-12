@@ -53,6 +53,7 @@ public class MainJFrame extends javax.swing.JFrame {
         enterpriseLabel = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         userProcessContainer = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -110,7 +111,9 @@ public class MainJFrame extends javax.swing.JFrame {
         userProcessContainer.setLayout(new java.awt.CardLayout());
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UserInterface/WhatsApp Image 2022-12-11 at 1.39.38 AM.jpeg"))); // NOI18N
-        userProcessContainer.add(jLabel4, "card2");
+        jPanel1.add(jLabel4);
+
+        userProcessContainer.add(jPanel1, "card3");
 
         jSplitPane.setRightComponent(userProcessContainer);
 
@@ -292,6 +295,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JSplitPane jSplitPane;
     private javax.swing.JTextField txtPassword;
     private javax.swing.JPasswordField txtPasswordField;
