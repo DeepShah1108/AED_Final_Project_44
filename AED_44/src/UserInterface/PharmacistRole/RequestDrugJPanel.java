@@ -23,7 +23,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Team Void
+ * @author Anouksha
  */
 public class RequestDrugJPanel extends javax.swing.JPanel {
 

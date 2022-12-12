@@ -21,7 +21,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Pankaj Gorav
+ * @author Jahnavi
  */
 public class QualityLabWorkAreaJPanel extends javax.swing.JPanel {
 

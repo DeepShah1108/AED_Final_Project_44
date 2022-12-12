@@ -25,7 +25,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Pankaj Gorav
+ * @author Anouksha
  */
 public class MerchantWorkAreaJPanel extends javax.swing.JPanel {
 
