@@ -17,4 +17,11 @@ Model:
 
 ![MedCareModel](https://user-images.githubusercontent.com/112993464/206947399-4e51e690-d559-42df-ad77-d68a62c2ccb8.jpg)
 
+Sequence Diagram:
+
+![SequenceMedcare](https://user-images.githubusercontent.com/112993464/206947616-0e719df7-1408-4637-9a06-6c3e7fd235cf.jpg)
+
+
+
+
 
