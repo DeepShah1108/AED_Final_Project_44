@@ -5,12 +5,16 @@
 package Business.DB4OUtil;
 
 import Business.ConfigureSystem;
-import Business.EcoSystem;
+
+import Business.EcoSystem;  //importing ecosystem
 import com.db4o.Db4oEmbedded;
-import com.db4o.ObjectContainer;
+
+import com.db4o.ObjectContainer;  
 import com.db4o.ObjectSet;
 import com.db4o.config.EmbeddedConfiguration;
-import com.db4o.ta.TransparentPersistenceSupport;
+
+import com.db4o.ta.TransparentPersistenceSupport; //db4
+
 import java.nio.file.Paths;
 /**
  *
@@ -18,8 +22,12 @@ import java.nio.file.Paths;
  */
 public class DB4OUtil {
     
-    private static final String FILENAME = Paths.get("Databank.db4o").toAbsolutePath().toString();// path to the data store
+    
+    
+    private static final String FILENAME = Paths.get("Databank.db4o").toAbsolutePath().toString();
     private static DB4OUtil dB4OUtil;
+    
+    
     
     public synchronized static DB4OUtil getInstance(){
         if (dB4OUtil == null){
@@ -28,25 +36,30 @@ public class DB4OUtil {
         return dB4OUtil;
     }
 
+    
     protected synchronized static void shutdown(ObjectContainer conn) {
         if (conn != null) {
             conn.close();
         }
     }
 
+    
+   
     private ObjectContainer createConnection() {
+        //create connection
         try {
 
             EmbeddedConfiguration config = Db4oEmbedded.newConfiguration();
+             //Controls the number of objects in memory
             config.common().add(new TransparentPersistenceSupport());
-            //Controls the number of objects in memory
-            config.common().activationDepth(Integer.MAX_VALUE);
-            //Controls the depth/level of updation of Object
+           
+            config.common().activationDepth(Integer.MAX_VALUE); //Controls the depth/level of updation of Object
+            
             config.common().updateDepth(Integer.MAX_VALUE);
 
-            //Register your top most Class here
-            config.common().objectClass(EcoSystem.class).cascadeOnUpdate(true); // Change to the object you want to save
-
+           
+            config.common().objectClass(EcoSystem.class).cascadeOnUpdate(true); 
+ //Register your top most Class here
             ObjectContainer db = Db4oEmbedded.openFile(config, FILENAME);
             return db;
         } catch (Exception ex) {
@@ -64,11 +77,12 @@ public class DB4OUtil {
     
     public EcoSystem retrieveSystem(){
         ObjectContainer conn = createConnection();
-        ObjectSet<EcoSystem> systems = conn.query(EcoSystem.class); // Change to the object you want to save
+        // Change to the object you want to save
+        ObjectSet<EcoSystem> systems = conn.query(EcoSystem.class); 
         EcoSystem system;
         if (systems.size() == 0){
-            system = ConfigureSystem.configure();  // If there's no System in the record, create a new one
-        }
+            system = ConfigureSystem.configure();  
+        }// If there's no System in the record, create a new one
         else{
             system = systems.get(systems.size() - 1);
         }

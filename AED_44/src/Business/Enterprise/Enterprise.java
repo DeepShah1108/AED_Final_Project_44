@@ -21,19 +21,23 @@ public abstract class Enterprise extends Organization{
     }
     
     public enum EnterpriseType{
+        //Enum of exterprises
         SuperStockist("SuperStockist"),
         Pharmacist("Pharmacist"),
-        Distributor("Distributor"),
+        Distributor("Distributor"), //distributor
         QualityLab("QualityLab"),
         Merchant("Merchant");
        
         
         private String value;
         
+        
         private EnterpriseType(String value){
+            
             this.value=value;
         }
         public String getValue() {
+            
             return value;
         }
         @Override
@@ -42,40 +46,48 @@ public abstract class Enterprise extends Organization{
 
     }
     }
-    
+    //superstockist 
     public enum EnumType1{
-        SuperStockist("SuperStockist"),StockistOrganization("SuperStockist");
+        
+        
+        SuperStockist("SuperStockist"),StockistOrganization("SuperStockist"); 
         private String value;
         private EnumType1(String value) {
+            
             this.value = value;
         }
         public String getValue() {
             return value;
         }
     }
-    
+    //pharmacist
     public enum EnumType2{
        Pharmacist("Shelter"),PharmacistOrganization("Pharmacist");
+       
+       
         private String value;
         private EnumType2(String value) {
             this.value = value;
+            
         }
         public String getValue() {
             return value;
         }
     }
-    
+    //Distributor
     public enum EnumType3{
        Distributor("Distributor"),DistributorOrganization("Distributor Drug Organization");
+       
         private String value;
         private EnumType3(String value) {
+            
             this.value = value;
         }
         public String getValue() {
             return value;
         }
     }
-    
+    //qualitylab
     public enum EnumType4{
        QualityLab("QualityLab"),QualityLabOrganization("QualityLab Organization");
         private String value;
@@ -86,7 +98,7 @@ public abstract class Enterprise extends Organization{
             return value;
         }
     }
-    
+    //Merchant
     public enum EnumType5{
        Merchant("Merchant"),MerchantOrganization("Merchant Organization");
         private String value;

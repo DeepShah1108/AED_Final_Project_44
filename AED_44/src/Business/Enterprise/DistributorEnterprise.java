@@ -6,7 +6,7 @@
 package Business.Enterprise;
 
 import Business.Role.Role;
-import Business.WorkQueue.InventoryDirectory;
+import Business.WorkQueue.InventoryDirectory;  //Importing Directory
 import java.util.ArrayList;
 
 /**
