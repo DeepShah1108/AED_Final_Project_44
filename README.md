@@ -21,6 +21,11 @@ Sequence Diagram:
 
 ![SequenceMedcare](https://user-images.githubusercontent.com/112993464/206947616-0e719df7-1408-4637-9a06-6c3e7fd235cf.jpg)
 
+Class Diagram[UML]:
+
+![DrugClassDiagram](https://user-images.githubusercontent.com/114772112/206952169-a9046186-ca73-40a7-a0e2-73e27eec07ad.png)
+
+
 
 
 
