@@ -11,12 +11,12 @@ import java.util.ArrayList;
 
 /**
  *
- * @author deepshah
+ * @author Jahnavi
  */
 public class MerchantOrganization extends Organization{
     
       public MerchantOrganization() {
-        super(Organization.Type.MerchantOrganization.getValue());
+        super(Organization.Type.MerchantOrganization.getValue());  //Merchant
     }
     
     @Override

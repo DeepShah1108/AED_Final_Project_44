@@ -20,7 +20,11 @@ import javax.swing.JPanel;
 public class QualityLabRole extends Role {
     
        @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business) {
+    public JPanel createWorkArea(JPanel userProcessContainer, 
+            UserAccount account,
+            Organization organization, 
+            Enterprise enterprise,
+            EcoSystem business) {
         return new QualityLabWorkAreaJPanel(userProcessContainer, account, (QualityLabOrganization)organization, enterprise,business);
     }
     

@@ -14,6 +14,7 @@ import Business.WorkQueue.WorkQueue;
  */
 public class UserAccount {
     
+    //initializing name and password
     
     private String username;
     private String password;
@@ -26,6 +27,7 @@ public class UserAccount {
     }
     
     
+    //get username
     public String getUsername() {
         return username;
     }

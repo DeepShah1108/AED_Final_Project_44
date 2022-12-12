@@ -19,7 +19,10 @@ import javax.swing.JPanel;
 public class SupplierRole extends Role{
 
     @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount userAccount, Organization organization, Enterprise enterprise, EcoSystem business) {
+    public JPanel createWorkArea(JPanel userProcessContainer,
+            UserAccount userAccount,
+            Organization organization, 
+            Enterprise enterprise, EcoSystem business) {
         return new SupplierWorkAreaJPanel(userProcessContainer, userAccount, (SupplierOrganization)organization, enterprise);
     }
     

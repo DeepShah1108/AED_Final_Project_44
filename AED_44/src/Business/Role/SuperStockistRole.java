@@ -17,12 +17,15 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author deepshah
+ * @author Jahnavi
  */
 public class SuperStockistRole extends Role {
     
     @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business) {
+    public JPanel createWorkArea(JPanel userProcessContainer,
+            UserAccount account,
+            Organization organization,
+            Enterprise enterprise, EcoSystem business) {
         return new SuperStockistWorkAreaJPanel(userProcessContainer, account, (SuperStockistAdminOrganization)organization,enterprise, business);
     }
     

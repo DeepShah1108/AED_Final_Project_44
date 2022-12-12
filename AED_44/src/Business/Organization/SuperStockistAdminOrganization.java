@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class SuperStockistAdminOrganization extends Organization{
     
      public SuperStockistAdminOrganization() {
-        super(Organization.Type.SuperStockistOrganization.getValue());
+        super(Organization.Type.SuperStockistOrganization.getValue());   //SuperStockist
     }
     
     @Override

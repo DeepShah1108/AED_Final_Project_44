@@ -20,7 +20,7 @@ public class InventoryDirectory {
    static InventoryDirectory iDir=null;
      
     private InventoryDirectory() {
-        
+        //giving drug names for the database 
      	Inventory inv1  = new Inventory("101", "Acetaminophen","Dayquil Products","Available",100);
         Inventory inv2  = new Inventory("102", "Dextromethorphan","Dayquil Products","Available",100);
         Inventory inv3  = new Inventory("103", "Phenylephrine","Dayquil Products","Available",100);
@@ -40,6 +40,8 @@ public class InventoryDirectory {
         Inventory inv17 = new Inventory("117", "Methadone","Advil","Available",100);
         Inventory inv18 = new Inventory("118", "Kevzara","Advil","Available",100);
         
+        
+        //add tye drug names
         inventoryList.add(inv1);
         inventoryList.add(inv2);
         inventoryList.add(inv3);

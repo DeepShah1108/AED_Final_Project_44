@@ -18,6 +18,7 @@ import javax.swing.JPanel;
 public abstract class Role {
     
     public enum RoleType{
+        //creating all the roles
     SuperStockistRole("SuperStockistRole"), 
     AdminRole("AdminRole"),
     DistributorRole("DistributorRole"),
@@ -41,6 +42,8 @@ public abstract class Role {
         }
     
     }
+    
+    //creating the work area
     public abstract JPanel createWorkArea(JPanel userProcessContainer, 
             UserAccount account, 
             Organization organization, 
