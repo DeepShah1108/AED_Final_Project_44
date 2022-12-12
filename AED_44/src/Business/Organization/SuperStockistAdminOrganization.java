@@ -5,24 +5,25 @@
  */
 package Business.Organization;
 
+import Business.Role.AdminRole;
+import Business.Role.SuperStockistRole;
 import Business.Role.Role;
-import Business.Role.ShelterRole;
 import java.util.ArrayList;
 
 /**
  *
- * @author Team Void
+ * @author deepshah
  */
-public class ShelterOrganization extends Organization{
+public class SuperStockistAdminOrganization extends Organization{
     
-     public ShelterOrganization() {
-        super(Organization.Type.ShelterFoodOrganization.getValue());
+     public SuperStockistAdminOrganization() {
+        super(Organization.Type.SuperStockistOrganization.getValue());
     }
     
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new ShelterRole());
+        roles.add(new SuperStockistRole());
         return roles;
     }
     

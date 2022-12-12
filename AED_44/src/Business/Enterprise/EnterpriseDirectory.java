@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Pankaj Gorav
+ * @author deepshah
  */
 public class EnterpriseDirectory {
     
@@ -31,24 +31,24 @@ public class EnterpriseDirectory {
     //Create enterprise
     public Enterprise createAndAddEnterprise(String name,Enterprise.EnterpriseType type){
         Enterprise enterprise=null;
-        if(type==Enterprise.EnterpriseType.NGO){
-            enterprise=new NGOEnterprise(name);  //Change Enterprise Here
+        if(type==Enterprise.EnterpriseType.SuperStockist){
+            enterprise=new SuperStockistEnterprise(name);  //Change Enterprise Here
             enterpriseList.add(enterprise);
         }
-        else if(type==Enterprise.EnterpriseType.QualityCheck){
-            enterprise=new QualityCheckEnterprise(name);
+        else if(type==Enterprise.EnterpriseType.QualityLab){
+            enterprise=new QualityLabEnterprise(name);
             enterpriseList.add(enterprise);
         }
         else if(type==Enterprise.EnterpriseType.Distributor){
             enterprise=new DistributorEnterprise(name);
             enterpriseList.add(enterprise);
         }
-        else if(type==Enterprise.EnterpriseType.Shelter){
-            enterprise=new ShelterEnterprise(name);
+        else if(type==Enterprise.EnterpriseType.Pharmacist){
+            enterprise=new PharmacistEnterprise(name);
             enterpriseList.add(enterprise);
         }
-        else if(type==Enterprise.EnterpriseType.Supplier){
-            enterprise=new SupplierEnterprise(name);
+        else if(type==Enterprise.EnterpriseType.Merchant){
+            enterprise=new MerchantEnterprise(name);
             enterpriseList.add(enterprise);
         }
         

@@ -9,7 +9,7 @@ import Business.Organization.OrganizationDirectory;
 
 /**
  *
- * @author Pankaj Gorav
+ * @author deepshah
  */
 public abstract class Enterprise extends Organization{
     
@@ -21,11 +21,11 @@ public abstract class Enterprise extends Organization{
     }
     
     public enum EnterpriseType{
-        NGO("NGO"),
-        Shelter("Shelter"),
+        SuperStockist("SuperStockist"),
+        Pharmacist("Pharmacist"),
         Distributor("Distributor"),
-        QualityCheck("Quality Check"),
-        Supplier("Supplier");
+        QualityLab("QualityLab"),
+        Merchant("Merchant");
        
         
         private String value;
@@ -44,7 +44,7 @@ public abstract class Enterprise extends Organization{
     }
     
     public enum EnumType1{
-        NGO("NGO"),NgoFoodOrganization("Ngo Food Organization");
+        SuperStockist("SuperStockist"),StockistOrganization("SuperStockist");
         private String value;
         private EnumType1(String value) {
             this.value = value;
@@ -55,7 +55,7 @@ public abstract class Enterprise extends Organization{
     }
     
     public enum EnumType2{
-       Shelter("Shelter"),ShelterFoodOrganization("Shelter Food Organization");
+       Pharmacist("Shelter"),PharmacistOrganization("Pharmacist");
         private String value;
         private EnumType2(String value) {
             this.value = value;
@@ -66,7 +66,7 @@ public abstract class Enterprise extends Organization{
     }
     
     public enum EnumType3{
-       Distributor("Distributor"),DistributorFoodOrganization("Distributor Food Organization");
+       Distributor("Distributor"),DistributorOrganization("Distributor Drug Organization");
         private String value;
         private EnumType3(String value) {
             this.value = value;
@@ -77,7 +77,7 @@ public abstract class Enterprise extends Organization{
     }
     
     public enum EnumType4{
-       QualityCheck("Quality Check"),QualityCheckFoodOrganization("QualityCheck Food Organization");
+       QualityLab("QualityLab"),QualityLabOrganization("QualityLab Organization");
         private String value;
         private EnumType4(String value) {
             this.value = value;
@@ -88,7 +88,7 @@ public abstract class Enterprise extends Organization{
     }
     
     public enum EnumType5{
-       Supplier("Supplier"),SupplierFoodOrganization("Supplier Food Organization");
+       Merchant("Merchant"),MerchantOrganization("Merchant Organization");
         private String value;
         private EnumType5(String value) {
             this.value = value;

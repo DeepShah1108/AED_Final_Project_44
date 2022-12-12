@@ -7,23 +7,23 @@ package Business.Role;
 
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
-import Business.Organization.NGOAdminOrganization;
+import Business.Organization.SuperStockistAdminOrganization;
 import Business.Organization.Organization;
-import Business.Organization.QualityOrganization;
+import Business.Organization.QualityLabOrganization;
 import Business.UserAccount.UserAccount;
-import UserInterface.NGORole.NGOWorkAreaJPanel;
-import UserInterface.QualityCheckRole.QualityCheckWorkAreaJPanel;
+import UserInterface.SuperStockistRole.SuperStockistWorkAreaJPanel;
+import UserInterface.QualityLabRole.QualityLabWorkAreaJPanel;
 import javax.swing.JPanel;
 
 /**
  *
- * @author Pankaj Gorav
+ * @author deepshah
  */
-public class NGORole extends Role {
+public class SuperStockistRole extends Role {
     
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business) {
-        return new NGOWorkAreaJPanel(userProcessContainer, account, (NGOAdminOrganization)organization,enterprise, business);
+        return new SuperStockistWorkAreaJPanel(userProcessContainer, account, (SuperStockistAdminOrganization)organization,enterprise, business);
     }
     
 }

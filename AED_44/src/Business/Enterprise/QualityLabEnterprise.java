@@ -10,12 +10,12 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Pankaj Gorav
+ * @author deepshah
  */
-public class QualityCheckEnterprise extends Enterprise {
+public class QualityLabEnterprise extends Enterprise {
     
-      public QualityCheckEnterprise(String name){
-        super(name,Enterprise.EnterpriseType.QualityCheck);
+      public QualityLabEnterprise(String name){
+        super(name,Enterprise.EnterpriseType.QualityLab);
     }
     
     @Override

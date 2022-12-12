@@ -13,17 +13,17 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Team Void
+ * @author deepshah
  */
 public abstract class Role {
     
     public enum RoleType{
-    NGORole("NGORole"), 
+    SuperStockistRole("SuperStockistRole"), 
     AdminRole("AdminRole"),
     DistributorRole("DistributorRole"),
-    QualityCheckRole("QualityCheckRole"),
-    ShelterRole("ShelterRole"),
-    SupplierRole("SupplierRole");
+    QualityLabRole("QualityLabRole"),
+    PharmacistRole("PharmacistRole"),
+    MerchantRole("MerchantRole");
 
      private String value;
      

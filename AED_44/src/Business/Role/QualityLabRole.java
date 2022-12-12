@@ -8,20 +8,20 @@ package Business.Role;
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Organization.Organization;
-import Business.Organization.QualityOrganization;
+import Business.Organization.QualityLabOrganization;
 import Business.UserAccount.UserAccount;
-import UserInterface.QualityCheckRole.QualityCheckWorkAreaJPanel;
+import UserInterface.QualityLabRole.QualityLabWorkAreaJPanel;
 import javax.swing.JPanel;
 
 /**
  *
- * @author Pankaj Gorav
+ * @author deepshah
  */
-public class QualityCheckRole extends Role {
+public class QualityLabRole extends Role {
     
        @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business) {
-        return new QualityCheckWorkAreaJPanel(userProcessContainer, account, (QualityOrganization)organization, enterprise,business);
+        return new QualityLabWorkAreaJPanel(userProcessContainer, account, (QualityLabOrganization)organization, enterprise,business);
     }
     
 }

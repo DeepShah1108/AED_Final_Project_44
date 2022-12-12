@@ -2,17 +2,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package UserInterface.NGORole;
+package UserInterface.SuperStockistRole;
 
 import Business.EcoSystem;
 import Business.Enterprise.DistributorEnterprise;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
 import Business.Organization.DistributorOrganization;
-import Business.Organization.NGOAdminOrganization;
+import Business.Organization.SuperStockistAdminOrganization;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
-import Business.WorkQueue.FoodRequirementRequest;
+import Business.WorkQueue.DrugRequirementRequest;
 import Business.WorkQueue.Products;
 import Business.WorkQueue.WorkRequest;
 import java.awt.CardLayout;
@@ -25,7 +25,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author JANU
  */
-public class NGOWorkAreaJPanel extends javax.swing.JPanel {
+public class SuperStockistWorkAreaJPanel extends javax.swing.JPanel {
 
     /**
      * Creates new form NGOWorkAreaJPanel
@@ -35,16 +35,16 @@ public class NGOWorkAreaJPanel extends javax.swing.JPanel {
     private EcoSystem business;
     private UserAccount userAccount;
     private Enterprise enterprise;
-    private NGOAdminOrganization ngoOrganization;
+    private SuperStockistAdminOrganization ngoOrganization;
     
-    public NGOWorkAreaJPanel(JPanel userProcessContainer, UserAccount userAccount, Organization organization, Enterprise enterprise, EcoSystem business){
+    public SuperStockistWorkAreaJPanel(JPanel userProcessContainer, UserAccount userAccount, Organization organization, Enterprise enterprise, EcoSystem business){
         initComponents();
         
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;
         this.business = business;
         this.enterprise = enterprise;
-        this.ngoOrganization = (NGOAdminOrganization) organization;
+        this.ngoOrganization = (SuperStockistAdminOrganization) organization;
     }
 
     /**
@@ -254,7 +254,7 @@ public class NGOWorkAreaJPanel extends javax.swing.JPanel {
             return;
         }
 
-        FoodRequirementRequest request = (FoodRequirementRequest) workRequestJTable.getValueAt(selectedRow, 0);
+        DrugRequirementRequest request = (DrugRequirementRequest) workRequestJTable.getValueAt(selectedRow, 0);
 
         if (request.getStatus().equalsIgnoreCase("Sent")) {
             JOptionPane.showMessageDialog(null, "Please assign the request", "Warning", JOptionPane.WARNING_MESSAGE);
@@ -264,7 +264,7 @@ public class NGOWorkAreaJPanel extends javax.swing.JPanel {
         if (request.getReceiver().equals(userAccount) && (request.getStatus().equalsIgnoreCase("Pending") || request.getStatus().equalsIgnoreCase("Processing"))) {
 
             request.setStatus("Processing");
-            ProcessNWorkRequestJPanel processWorkRequestJPanel = new ProcessNWorkRequestJPanel(userProcessContainer, request);
+            ProcessSWorkRequestJPanel processWorkRequestJPanel = new ProcessSWorkRequestJPanel(userProcessContainer, request);
             userProcessContainer.add("processWorkRequestJPanel", processWorkRequestJPanel);
             CardLayout layout = (CardLayout) userProcessContainer.getLayout();
             layout.next(userProcessContainer);
@@ -289,7 +289,7 @@ public class NGOWorkAreaJPanel extends javax.swing.JPanel {
             return;
         }
 
-        FoodRequirementRequest distrequest = (FoodRequirementRequest) workRequestJTable.getValueAt(selectedRow, 0);
+        DrugRequirementRequest distrequest = (DrugRequirementRequest) workRequestJTable.getValueAt(selectedRow, 0);
 
         if (distrequest.getStatus().equalsIgnoreCase("Rejected")) {
 
@@ -353,7 +353,7 @@ public class NGOWorkAreaJPanel extends javax.swing.JPanel {
 
         WorkRequest request = (WorkRequest) workRequestJTable.getValueAt(selectedRow, 0);
 
-        ArrayList<Products> productList = ((FoodRequirementRequest) request).getProductList();
+        ArrayList<Products> productList = ((DrugRequirementRequest) request).getProductList();
         if (productList != null) {
             for (Products p : productList) {
                 Object row[] = new Object[3];

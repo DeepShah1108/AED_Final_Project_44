@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package UserInterface.QualityCheckRole;
+package UserInterface.QualityLabRole;
 
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
-import Business.Organization.NGOAdminOrganization;
-import Business.Organization.QualityOrganization;
+import Business.Organization.SuperStockistAdminOrganization;
+import Business.Organization.QualityLabOrganization;
 import Business.UserAccount.UserAccount;
-import Business.WorkQueue.FoodRequirementRequest;
+import Business.WorkQueue.DrugRequirementRequest;
 import Business.WorkQueue.Products;
 import Business.WorkQueue.WorkRequest;
 import java.awt.CardLayout;
@@ -23,7 +23,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author Pankaj Gorav
  */
-public class QualityCheckWorkAreaJPanel extends javax.swing.JPanel {
+public class QualityLabWorkAreaJPanel extends javax.swing.JPanel {
 
     /**
      * Creates new form QualityCheckWorkAreaJPanel
@@ -32,18 +32,18 @@ public class QualityCheckWorkAreaJPanel extends javax.swing.JPanel {
     private EcoSystem business;
     private UserAccount userAccount;
     private Enterprise enterprise;
-    private NGOAdminOrganization ngoOrganization;
-    private QualityOrganization qualityOrganization; 
+    private SuperStockistAdminOrganization ngoOrganization;
+    private QualityLabOrganization qualityOrganization; 
     
     //Organization organization,Enterprise enterprise, EcoSystem business
     //JPanel userProcessContainer, UserAccount account, QualityOrganization qualityOrganization, Enterprise enterprise
-    public QualityCheckWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, QualityOrganization qualityOrganization, Enterprise enterprise, EcoSystem business) {
+    public QualityLabWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, QualityLabOrganization qualityOrganization, Enterprise enterprise, EcoSystem business) {
         initComponents();
          this.userProcessContainer = userProcessContainer;
         this.userAccount = account;
         this.business = business;
         this.enterprise=enterprise;
-        this.qualityOrganization = (QualityOrganization)qualityOrganization;
+        this.qualityOrganization = (QualityLabOrganization)qualityOrganization;
         
         populateTable();
     }
@@ -247,7 +247,7 @@ public class QualityCheckWorkAreaJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "Please select a request!", "Warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
-        FoodRequirementRequest request = (FoodRequirementRequest)workRequestJTable.getValueAt(selectedRow, 0);
+        DrugRequirementRequest request = (DrugRequirementRequest)workRequestJTable.getValueAt(selectedRow, 0);
 
         if (request.getStatus().equalsIgnoreCase("Sent to Quality")) {
             JOptionPane.showMessageDialog(null, "Please assign the request", "Warning", JOptionPane.WARNING_MESSAGE);
@@ -288,7 +288,7 @@ public class QualityCheckWorkAreaJPanel extends javax.swing.JPanel {
         // {
             //  if (request1=request)
             //{
-                ArrayList<Products> productList = ((FoodRequirementRequest) request).getProductList();
+                ArrayList<Products> productList = ((DrugRequirementRequest) request).getProductList();
                 if (productList!=null){
                     for (Products p : productList) {
                         Object row[] = new Object[3];

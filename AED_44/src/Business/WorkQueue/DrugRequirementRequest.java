@@ -9,9 +9,9 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Pankaj Gorav
+ * @author deepshah
  */
-public class FoodRequirementRequest extends WorkRequest{
+public class DrugRequirementRequest extends WorkRequest{
     
      
     private String requestResult;
@@ -26,7 +26,7 @@ public class FoodRequirementRequest extends WorkRequest{
     }
     private ArrayList<Products> suppProductList;
     
-    public FoodRequirementRequest(){
+    public DrugRequirementRequest(){
         super();
         this.productList= new ArrayList<>();
         this.suppProductList=new ArrayList<>();

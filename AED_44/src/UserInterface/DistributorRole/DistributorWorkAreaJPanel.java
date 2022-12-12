@@ -7,13 +7,13 @@ package UserInterface.DistributorRole;
 
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
-import Business.Enterprise.QualityCheckEnterprise;
+import Business.Enterprise.QualityLabEnterprise;
 import Business.Network.Network;
 import Business.Organization.DistributorOrganization;
 import Business.Organization.Organization;
-import Business.Organization.QualityOrganization;
+import Business.Organization.QualityLabOrganization;
 import Business.UserAccount.UserAccount;
-import Business.WorkQueue.FoodRequirementRequest;
+import Business.WorkQueue.DrugRequirementRequest;
 import Business.WorkQueue.Inventory;
 import Business.WorkQueue.InventoryDirectory;
 import Business.WorkQueue.Products;
@@ -238,7 +238,7 @@ public class DistributorWorkAreaJPanel extends javax.swing.JPanel {
         ArrayList<Products> reqProduct = new ArrayList<>();
         HashMap<String, Integer> reqProductMap = new HashMap<>();
 
-        FoodRequirementRequest request = (FoodRequirementRequest) workRequestJTable.getValueAt(selectedRow, 0);
+        DrugRequirementRequest request = (DrugRequirementRequest) workRequestJTable.getValueAt(selectedRow, 0);
 
         if (request.getStatus().equalsIgnoreCase("Sent to Distributor")) {
             JOptionPane.showMessageDialog(null, "Please assign the request", "Warning", JOptionPane.WARNING_MESSAGE);
@@ -301,7 +301,7 @@ public class DistributorWorkAreaJPanel extends javax.swing.JPanel {
             return;
         }
 
-        FoodRequirementRequest quaRequest = (FoodRequirementRequest) workRequestJTable.getValueAt(selectedRow, 0);
+        DrugRequirementRequest quaRequest = (DrugRequirementRequest) workRequestJTable.getValueAt(selectedRow, 0);
         
         if (quaRequest.getStatus().equalsIgnoreCase("Sent to Supplier")) {
             JOptionPane.showMessageDialog(null, "Request pending with Supplier!", "Warning", JOptionPane.WARNING_MESSAGE);
@@ -329,11 +329,11 @@ public class DistributorWorkAreaJPanel extends javax.swing.JPanel {
 
                 //   e.setEnterpriseType(Enterprise.EnterpriseType.QualityCheck);
                 //if(e.getEnterpriseType().getValue().equals("Quality Check"))
-                if (e instanceof QualityCheckEnterprise) {
+                if (e instanceof QualityLabEnterprise) {
 
                     Organization org = null;
                     for (Organization organization : e.getOrganizationDirectory().getOrganizationList()) {
-                        if (organization instanceof QualityOrganization) { //changed from shlter to ngo organization
+                        if (organization instanceof QualityLabOrganization) { //changed from shlter to ngo organization
                             org = organization;
                             break;
                         }

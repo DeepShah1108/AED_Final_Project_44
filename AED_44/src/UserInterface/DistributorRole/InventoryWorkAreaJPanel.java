@@ -5,7 +5,7 @@
  */
 package UserInterface.DistributorRole;
 
-import Business.WorkQueue.FoodRequirementRequest;
+import Business.WorkQueue.DrugRequirementRequest;
 import Business.WorkQueue.Inventory;
 import Business.WorkQueue.Products;
 import Business.WorkQueue.WorkRequest;

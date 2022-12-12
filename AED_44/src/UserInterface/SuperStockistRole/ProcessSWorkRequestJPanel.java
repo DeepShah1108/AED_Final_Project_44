@@ -2,9 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package UserInterface.NGORole;
+package UserInterface.SuperStockistRole;
 
-import Business.WorkQueue.FoodRequirementRequest;
+import Business.WorkQueue.DrugRequirementRequest;
 import java.awt.CardLayout;
 import java.awt.Component;
 import javax.swing.ButtonGroup;
@@ -15,16 +15,16 @@ import javax.swing.JPanel;
  *
  * @author JANU
  */
-public class ProcessNWorkRequestJPanel extends javax.swing.JPanel {
+public class ProcessSWorkRequestJPanel extends javax.swing.JPanel {
 
     /**
      * Creates new form ProcessNWorkRequestJPanel
      */
     
     private JPanel userProcessContainer;
-    private FoodRequirementRequest request;
+    private DrugRequirementRequest request;
     
-    public ProcessNWorkRequestJPanel(JPanel userProcessContainer, FoodRequirementRequest request) {
+    public ProcessSWorkRequestJPanel(JPanel userProcessContainer, DrugRequirementRequest request) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.request = request;
@@ -169,7 +169,7 @@ public class ProcessNWorkRequestJPanel extends javax.swing.JPanel {
         userProcessContainer.remove(this);
         Component[] componentArray = userProcessContainer.getComponents();
         Component component = componentArray[componentArray.length - 1];
-        NGOWorkAreaJPanel dwjp = (NGOWorkAreaJPanel) component;
+        SuperStockistWorkAreaJPanel dwjp = (SuperStockistWorkAreaJPanel) component;
         dwjp.populateTable();
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);

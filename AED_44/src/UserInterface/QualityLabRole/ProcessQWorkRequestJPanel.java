@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package UserInterface.QualityCheckRole;
+package UserInterface.QualityLabRole;
 
-import Business.WorkQueue.FoodRequirementRequest;
+import Business.WorkQueue.DrugRequirementRequest;
 import Business.WorkQueue.Products;
 import java.awt.CardLayout;
 import java.awt.Color;
@@ -32,9 +32,9 @@ public class ProcessQWorkRequestJPanel extends javax.swing.JPanel {
      * Creates new form ProcessQWorkRequestJPanel
      */
     private JPanel userProcessContainer;
-    private FoodRequirementRequest request;
+    private DrugRequirementRequest request;
 
-    public ProcessQWorkRequestJPanel(JPanel userProcessContainer, FoodRequirementRequest request) {
+    public ProcessQWorkRequestJPanel(JPanel userProcessContainer, DrugRequirementRequest request) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.request = request;
@@ -56,7 +56,7 @@ public class ProcessQWorkRequestJPanel extends javax.swing.JPanel {
 
         model.setRowCount(0);
 
-        ArrayList<Products> productList = ((FoodRequirementRequest) request).getProductList();
+        ArrayList<Products> productList = ((DrugRequirementRequest) request).getProductList();
         if (productList != null) {
             for (Products p : productList) {
                 Object row[] = new Object[3];
@@ -637,7 +637,7 @@ public class ProcessQWorkRequestJPanel extends javax.swing.JPanel {
         userProcessContainer.remove(this);
         Component[] componentArray = userProcessContainer.getComponents();
         Component component = componentArray[componentArray.length - 1];
-        QualityCheckWorkAreaJPanel dwjp = (QualityCheckWorkAreaJPanel) component;
+        QualityLabWorkAreaJPanel dwjp = (QualityLabWorkAreaJPanel) component;
         dwjp.populateTable();
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);

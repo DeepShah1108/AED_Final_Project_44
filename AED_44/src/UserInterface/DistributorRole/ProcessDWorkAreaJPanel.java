@@ -7,12 +7,12 @@ package UserInterface.DistributorRole;
 
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
-import Business.Enterprise.SupplierEnterprise;
+import Business.Enterprise.MerchantEnterprise;
 import Business.Network.Network;
 import Business.Organization.Organization;
-import Business.Organization.SupplierOrganization;
+import Business.Organization.MerchantOrganization;
 import Business.UserAccount.UserAccount;
-import Business.WorkQueue.FoodRequirementRequest;
+import Business.WorkQueue.DrugRequirementRequest;
 import Business.WorkQueue.Inventory;
 import Business.WorkQueue.InventoryDirectory;
 import Business.WorkQueue.Products;
@@ -36,7 +36,7 @@ public class ProcessDWorkAreaJPanel extends javax.swing.JPanel {
      * Creates new form ProcessDWorkAreaJPanel
      */
     private JPanel userProcessContainer;
-    private FoodRequirementRequest request;
+    private DrugRequirementRequest request;
     private ArrayList<Inventory> inventoryList;
     private ArrayList<Products> productList;
     UserAccount userAccount;
@@ -46,7 +46,7 @@ public class ProcessDWorkAreaJPanel extends javax.swing.JPanel {
     Enterprise enterprise;
     HashMap<String, Integer> requiredProdMap = new HashMap<>();
 
-    public ProcessDWorkAreaJPanel(JPanel userProcessContainer,UserAccount userAccount, FoodRequirementRequest requestFood, Boolean flag, HashMap<String, Integer> requiredProdMap, Enterprise enterprise, EcoSystem ecosystem) {
+    public ProcessDWorkAreaJPanel(JPanel userProcessContainer,UserAccount userAccount, DrugRequirementRequest requestFood, Boolean flag, HashMap<String, Integer> requiredProdMap, Enterprise enterprise, EcoSystem ecosystem) {
         initComponents();
         // InventoryDirectory.setInventoryList();
         this.userProcessContainer = userProcessContainer;
@@ -382,9 +382,9 @@ public class ProcessDWorkAreaJPanel extends javax.swing.JPanel {
         
         for (Network network : ecosystem.getNetworkList()) {
             for (Enterprise entp : network.getEnterpriseDirectory().getEnterpriseList()) {
-                if (entp instanceof SupplierEnterprise) {
+                if (entp instanceof MerchantEnterprise) {
                     for (Organization org : entp.getOrganizationDirectory().getOrganizationList()) {
-                        if (org instanceof SupplierOrganization) {
+                        if (org instanceof MerchantOrganization) {
                            org.getWorkQueue().getWorkRequestList().add(request);
                            userAccount.getWorkQueue().getWorkRequestList().add(request);
                             
@@ -408,7 +408,7 @@ public class ProcessDWorkAreaJPanel extends javax.swing.JPanel {
 
         model.setRowCount(0);
 
-        productList = ((FoodRequirementRequest) request).getProductList();
+        productList = ((DrugRequirementRequest) request).getProductList();
         if (productList != null) {
             for (Products p : productList) {
                 Object row[] = new Object[3];
