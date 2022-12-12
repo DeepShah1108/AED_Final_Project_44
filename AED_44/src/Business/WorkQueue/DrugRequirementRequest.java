@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author deepshah
+ * @author Anouksha
  */
 public class DrugRequirementRequest extends WorkRequest{
     
@@ -17,15 +17,17 @@ public class DrugRequirementRequest extends WorkRequest{
     private String requestResult;
     private ArrayList<Products> productList;
 
+    //Get Product List
     public ArrayList<Products> getSuppProductList() {
         return suppProductList;
     }
-
+//setter and getter
     public void setSuppProductList(ArrayList<Products> suppProductList) {
         this.suppProductList = suppProductList;
     }
     private ArrayList<Products> suppProductList;
     
+    //DrugRequirement request
     public DrugRequirementRequest(){
         super();
         this.productList= new ArrayList<>();

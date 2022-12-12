@@ -7,12 +7,14 @@ package Business.WorkQueue;
 
 /**
  *
- * @author Pankaj Gorav
+ * @author Anouksha
  */
 public class Products {
     
+    
     private String productType;
     private String productName;
+    
     private int quantity;
     
 

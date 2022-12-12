@@ -15,12 +15,14 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author deepshah
+ * @author Anouksha
  */
 public class MerchantRole extends Role {
     
         @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business) {
+    public JPanel createWorkArea(JPanel userProcessContainer,
+            UserAccount account, Organization organization,
+            Enterprise enterprise, EcoSystem business) {
         return new MerchantWorkAreaJPanel(userProcessContainer, account, (MerchantOrganization)organization, enterprise,business);
     }
     

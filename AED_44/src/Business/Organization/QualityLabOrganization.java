@@ -11,12 +11,12 @@ import java.util.ArrayList;
 
 /**
  *
- * @author deepshah
+ * @author Anouksha
  */
 public class QualityLabOrganization extends Organization{
    
      public QualityLabOrganization() {
-        super(Organization.Type.QualityLabOrganization.getValue());
+        super(Organization.Type.QualityLabOrganization.getValue());  //QualityLab
     }
     
     @Override

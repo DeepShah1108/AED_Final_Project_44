@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class DistributorOrganization extends Organization{
  
      public DistributorOrganization() {
-        super(Organization.Type.DistributorOrganization.getValue());
+        super(Organization.Type.DistributorOrganization.getValue());  //Distributor
     }
     
     @Override

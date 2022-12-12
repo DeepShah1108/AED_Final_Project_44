@@ -13,11 +13,13 @@ import java.util.Date;
  * @author deepshah
  */
 public class WorkRequest {
+    //initializing
     
     private String message;
     private UserAccount sender;
     private UserAccount receiver;
     private String status;
+    
     private Date requestDate;
     private Date resolveDate;
     

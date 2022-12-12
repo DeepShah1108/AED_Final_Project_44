@@ -9,18 +9,20 @@ import java.util.Date;
 
 /**
  *
- * @author deepshah
+ * @author Jahnavi
  */
 public class Inventory {
 
     private String productID;
     private String productName;
     private String productType;
+    
     private String availability;
+    
     private int quantity;
 
     private static Date date = new Date();
-
+//getter and setter for date
     public static Date getDate() {
         return date;
     }
@@ -28,7 +30,7 @@ public class Inventory {
     public static void setDate() {
         date = new Date();
     }
-
+//get product name
     public Inventory(String productID, String productName, String productType, String availability, int quantity) {
         this.productID = productID;
         this.productName = productName;

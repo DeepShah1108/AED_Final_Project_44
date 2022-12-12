@@ -11,12 +11,12 @@ import java.util.ArrayList;
 
 /**
  *
- * @author deepshah
+ * @author Jahnavi
  */
 public class SupplierOrganization extends Organization {
 
       public SupplierOrganization() {
-        super(Organization.Type.SupplierOrganization.getValue());
+        super(Organization.Type.SupplierOrganization.getValue());   //SupplierOrganization
     }
     
     @Override

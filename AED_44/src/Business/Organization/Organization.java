@@ -13,19 +13,23 @@ import java.util.ArrayList;
 
 /**
  *
- * @author deepshah
+ * @author Anouksha
  */
 public abstract class Organization {
     
+    
     private String name;
     private WorkQueue workQueue;
+    
     private EmployeeDirectory employeeDirectory;
+    
     private UserAccountDirectory userAccountDirectory;
     private int organizationID;
+    
     private static int counter=0;
     
     public enum Type{
-        Admin("Admin Organization"),
+        Admin("Admin Organization"),   //Admin
         SuperStockistOrganization("SuperStockist Organization"), 
         PharmacistOrganization("Pharmacist Organization"), 
         DistributorOrganization("Distributor Organization"), 
@@ -35,6 +39,7 @@ public abstract class Organization {
         
         private String value;
         private Type(String value) {
+            
             this.value = value;
         }
         public String getValue() {
@@ -43,8 +48,9 @@ public abstract class Organization {
     }
 
     public Organization(String name) {
+        
         this.name = name;
-        workQueue = new WorkQueue();
+        workQueue = new WorkQueue();  //calling workQueue
         employeeDirectory = new EmployeeDirectory();
         userAccountDirectory = new UserAccountDirectory();
         organizationID = counter;
