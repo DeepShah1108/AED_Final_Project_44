@@ -58,7 +58,7 @@ public class RequestDrugJPanel extends javax.swing.JPanel {
         quantBenadryl.setEnabled(false);
         quantClaritin.setEnabled(false);
         
-        //btnReset.setEnabled(false);
+
 
     }
 
@@ -286,7 +286,7 @@ public class RequestDrugJPanel extends javax.swing.JPanel {
 
     private void requestTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestTestJButtonActionPerformed
 
-        //******************* Validation *********************
+        // Validation 
         
          if(!(checkDayquil.isSelected()) && !(checkNeoSporin.isSelected()) && !(checkBenadryl.isSelected()) && !(checkTylenol.isSelected()) && !(checkClaritin.isSelected())){
             
@@ -301,7 +301,7 @@ public class RequestDrugJPanel extends javax.swing.JPanel {
             return;
         }
          
-        //**************************************
+        //
 
          int check=0;
        

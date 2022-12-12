@@ -52,8 +52,7 @@ public class PharmacistWorkAreaJPanel extends javax.swing.JPanel {
         for (WorkRequest request : userAccount.getWorkQueue().getWorkRequestList())
         {
            
-           // if (productList!=null){
-           //for (Products p : productList) {
+  
             Object[] row = new Object[4];
             row[0] = request;
             row[1] = request.getReceiver();
@@ -242,7 +241,7 @@ public class PharmacistWorkAreaJPanel extends javax.swing.JPanel {
                 .addComponent(showProductBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(37, 37, 37)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(226, Short.MAX_VALUE))
+                .addContainerGap(234, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -271,11 +270,10 @@ public class PharmacistWorkAreaJPanel extends javax.swing.JPanel {
        
         DefaultTableModel model = (DefaultTableModel) tblProducts.getModel();
         model.setRowCount(0);model.setRowCount(0);
-       // FoodRequirementRequest distrequest = (FoodRequirementRequest)workRequestJTable.getValueAt(selectedRow, 0);
+  
          WorkRequest request = (WorkRequest)shelterWorkRequestTable.getValueAt(selectedRow, 0);
          
-        //for (WorkRequest request : userAccount.getWorkQueue().getWorkRequestList())
-        //{
+
         ArrayList<Products> productList = ((DrugRequirementRequest) request).getProductList();
          if (productList!=null){
             for (Products p : productList) {
@@ -286,7 +284,7 @@ public class PharmacistWorkAreaJPanel extends javax.swing.JPanel {
                 ((DefaultTableModel) tblProducts.getModel()).addRow(row);  
         }
          }
-        //}
+
         
         
         

@@ -254,20 +254,16 @@ public class DistributorWorkAreaJPanel extends javax.swing.JPanel {
                 if (prod.getProductName().equalsIgnoreCase(inSupp.getProductName())) {
                     System.out.println(prod.getProductName() + "   " + inSupp.getProductName());
                     if (prod.getQuantity() < inSupp.getQuantity()) {
-//                        suppCount=inSupp.getQuantity();
-//                        reqCount=prod.getQuantity();
-//                        suppCount=-reqCount;
-//                        inSupp.setQuantity(suppCount);
+                       
                         booleanList.add(true);
-                        //    flag = true;
-                        //  break;
+                        
 
                     } else {
                         reqProductMap.put(prod.getProductName(), prod.getQuantity());
                         System.out.println(reqProductMap + "Request Map");
                         booleanList.add(false);
-//   flag = false;
-//                        JOptionPane.showMessageDialog(null, "Insufficient Quantity for "+prod.getProductName());
+  
+                        JOptionPane.showMessageDialog(null, "Insufficient Quantity for "+prod.getProductName());
                         //  break;
                     }
                 }
@@ -318,7 +314,7 @@ public class DistributorWorkAreaJPanel extends javax.swing.JPanel {
             quaRequest.setReceiver(null);
         }
         //String message = messageJTextField.getText();
-        //FoodRequirementRequest request = new FoodRequirementRequest();
+    
         quaRequest.setMessage(quaRequest.getMessage());
         quaRequest.setSender(userAccount);
         quaRequest.setStatus("Sent to Quality");
@@ -327,8 +323,6 @@ public class DistributorWorkAreaJPanel extends javax.swing.JPanel {
 
             for (Enterprise e : n.getEnterpriseDirectory().getEnterpriseList()) {
 
-                //   e.setEnterpriseType(Enterprise.EnterpriseType.QualityCheck);
-                //if(e.getEnterpriseType().getValue().equals("Quality Check"))
                 if (e instanceof QualityLabEnterprise) {
 
                     Organization org = null;
